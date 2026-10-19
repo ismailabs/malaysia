@@ -1,0 +1,7 @@
+verification
+scripts
+*.md
+.git
+node_modules
+.env*
+assets/fonts/*.ttf
