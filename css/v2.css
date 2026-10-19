@@ -18,4 +18,7 @@
 .map-destinations{top:86%}.atlas-world>img{filter:brightness(.55)}
 @media(max-width:700px){.map-destinations{top:103%}.world-george-town .world-heading h3{font-size:14vw}}
 @media(max-width:700px){.map-regions,.map-regions em,.map-destinations a,.atlas-photo-credit,.skip-opening,.world-picture figcaption,.act-credit,.act-info p:first-child,.motion-toggle,.footer-bottom{font-size:13px}.world-note p,.atlas-bottom p,.studio-action p{font-size:16px}.world-note{padding-bottom:72px}.map-regions{gap:0}.map-regions span{max-width:135px;padding-inline:4px}.map-regions em{max-width:85px}.map-destinations a{min-height:44px}.world-picture figcaption{left:20px;right:20px}}
+/* Keep fixed motion controls clear of reading/focus surfaces in every held act. */
+html{scroll-padding-bottom:90px}
+@media(min-width:701px){.world-note{padding-bottom:90px}.motion-live .world-note{min-height:200px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
