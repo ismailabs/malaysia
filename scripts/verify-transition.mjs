@@ -34,6 +34,8 @@ try {
     await page.goto(`${legacy}/?from=legacy#${fragment}`);
     assert.equal(page.url(), `${production}/?from=legacy#${fragment}`);
     assert.equal(await page.locator(`[id="${fragment}"]`).count(), 1);
+    const legacyPlace = { streets: 'george-town', coast: 'langkawi', borneo: 'sabah' }[fragment];
+    if (legacyPlace) assert.equal(await page.locator(`[id="${fragment}"]`).evaluate(el => el.closest('[data-world]')?.dataset.world), legacyPlace);
     fragments.push({ fragment, url: page.url(), targetExists: true });
   }
   for (const route of routes.slice(0, 5)) {

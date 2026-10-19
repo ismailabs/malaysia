@@ -18,6 +18,9 @@ for(const concept of ['a','b'])for(const width of [1440,390]){
  await page.emulateMedia({reducedMotion:'reduce'});await page.getByRole('button',{name:'Resume movement',exact:true}).click();
  if(await page.evaluate(()=>ScrollTrigger.getAll().length)!==0)throw Error('Reduced motion failed');
  await page.keyboard.press('Tab');
+ const destination=concept==='a'?'kuala-lumpur':'sabah';
+ await Promise.all([page.waitForURL(u=>u.pathname===`/destinations/${destination}/`),page.locator(`.map nav a[href="/destinations/${destination}/"]`).click()]);
+ if(await page.locator('h1').count()!==1)throw Error('Prototype destination did not load');
  const video=page.video();await context.close();if(video)await video.saveAs(`${dir}/motion.webm`);
  report.push({concept,width,url,browser:browser.version(),errors,states:3,pause:true,reduced:true});
 }
