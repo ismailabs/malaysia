@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://malaysia.ismailstudio.my/:path*",
+      "permanent": true
+    }
+  ]
+}

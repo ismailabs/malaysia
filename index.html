@@ -3,34 +3,47 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f0eee6" />
+    <meta name="theme-color" content="#eeecea" />
+    <title>Malaysia — Between Places | A photographic journey</title>
     <meta
       name="description"
-      content="Between Places — an independent digital journey through Malaysia. City skylines, everyday rituals, island edges, and the highlands of Borneo."
+      content="Explore Malaysia between its landmarks: Kuala Lumpur, George Town, Langkawi and Sabah. An independent photographic journey by Ismail Studio."
     />
-    <meta property="og:title" content="Malaysia — Between Places" />
+    <link rel="canonical" href="https://malaysia.ismailstudio.my/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_MY" />
+    <meta property="og:site_name" content="Malaysia — Between Places" />
+    <meta
+      property="og:title"
+      content="Malaysia — Between Places | A photographic journey"
+    />
     <meta
       property="og:description"
-      content="A country best felt between its landmarks. An independent, interactive Malaysian field guide."
+      content="Explore Malaysia between its landmarks: Kuala Lumpur, George Town, Langkawi and Sabah. An independent photographic journey by Ismail Studio."
     />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://malaysia-between-places.vercel.app/" />
-    <meta property="og:image" content="https://malaysia-between-places.vercel.app/assets/images/social.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Malaysia — Between Places, with the Petronas Twin Towers at sunset" />
+    <meta property="og:url" content="https://malaysia.ismailstudio.my/" />
+    <meta
+      property="og:image"
+      content="https://malaysia.ismailstudio.my/assets/images/kuala-lumpur-1200.webp"
+    />
+    <meta
+      property="og:image:alt"
+      content="The illuminated Petronas Twin Towers and surrounding Kuala Lumpur skyline at dusk"
+    />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://malaysia-between-places.vercel.app/assets/images/social.jpg" />
-    <link rel="canonical" href="https://malaysia-between-places.vercel.app/" />
-    <title>Malaysia — Between Places</title>
-    <link rel="icon" href="/assets/icons/mark.svg" type="image/svg+xml" />
-    <link
-      rel="preload"
-      href="/assets/fonts/barlow-condensed.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
+    <meta
+      name="twitter:title"
+      content="Malaysia — Between Places | A photographic journey"
     />
+    <meta
+      name="twitter:description"
+      content="Explore Malaysia between its landmarks: Kuala Lumpur, George Town, Langkawi and Sabah. An independent photographic journey by Ismail Studio."
+    />
+    <meta
+      name="twitter:image"
+      content="https://malaysia.ismailstudio.my/assets/images/kuala-lumpur-1200.webp"
+    />
+    <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
     <link
       rel="preload"
       href="/assets/fonts/manrope.woff2"
@@ -38,674 +51,638 @@
       type="font/woff2"
       crossorigin
     />
+    <link
+      rel="preload"
+      href="/assets/fonts/barlow-condensed.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="/css/main.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Malaysia — Between Places | A photographic journey",
+        "description": "Explore Malaysia between its landmarks: Kuala Lumpur, George Town, Langkawi and Sabah. An independent photographic journey by Ismail Studio.",
+        "url": "https://malaysia.ismailstudio.my/",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Malaysia — Between Places",
+          "url": "https://malaysia.ismailstudio.my/"
+        }
+      }
+    </script>
     <script defer src="/assets/vendor/gsap.min.js"></script>
     <script defer src="/assets/vendor/ScrollTrigger.min.js"></script>
     <script type="module" src="/js/main.js"></script>
   </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to the journey</a>
+  <body class="home" id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="header">
-      <a
-        href="#home"
-        class="brand"
-        aria-label="Between Places, back to the beginning"
-        ><span class="brand-mark">MY<span class="brand-dot">.</span></span
-        ><span class="brand-name">BETWEEN<br />PLACES</span></a
+      <a class="wordmark" href="/" aria-label="Between Places — home"
+        >Between<br />Places<span aria-hidden="true">.</span></a
       >
-      <span class="header-note"
-        >A MALAYSIAN FIELD GUIDE<span
-          class="status-dot"
-          aria-hidden="true"
-        ></span
-      ></span>
-      <button class="index-toggle" data-dialog="menu" aria-haspopup="dialog">
-        Explore the index
-        <span class="index-icon" aria-hidden="true"><i></i><i></i></span>
-      </button>
+      <nav aria-label="Primary">
+        <a class="journey-nav" href="/#journey">The journey</a
+        ><a class="places-fallback" href="/#places">All places</a
+        ><button
+          class="menu-button"
+          type="button"
+          aria-haspopup="dialog"
+          aria-controls="place-menu"
+          hidden
+        >
+          All places</button
+        ><a
+          class="nav-studio"
+          href="https://ismailstudio.my/"
+          data-cta-placement="header"
+          >The studio <span aria-hidden="true">↗</span></a
+        >
+      </nav>
     </header>
-    <main id="main">
-      <section
-        class="hero scene"
-        id="home"
-        data-scene="Introduction"
-        aria-labelledby="hero-title"
+    <dialog id="place-menu" aria-labelledby="menu-title">
+      <div class="dialog-top">
+        <h2 id="menu-title">Choose a place.</h2>
+        <button type="button" class="dialog-close">
+          Close <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <nav class="menu-places" aria-label="Destinations">
+        <a href="/destinations/kuala-lumpur/"
+          >Kuala Lumpur <span aria-hidden="true">↗</span
+          ><small>City & street</small></a
+        ><a href="/destinations/george-town/"
+          >George Town <span aria-hidden="true">↗</span
+          ><small>Heritage & everyday life</small></a
+        ><a href="/destinations/langkawi/"
+          >Langkawi <span aria-hidden="true">↗</span
+          ><small>Limestone & tidal water</small></a
+        ><a href="/destinations/sabah/"
+          >Sabah <span aria-hidden="true">↗</span
+          ><small>Granite & forest</small></a
+        >
+      </nav>
+      <a class="text-link" href="/credits/"
+        >Photography, sources & privacy <span aria-hidden="true">↗</span></a
       >
-        <div class="hero-frame">
+    </dialog>
+    <main id="main" tabindex="-1">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <figure class="print print-city">
           <img
-            class="hero-image"
-            src="/assets/images/kuala-lumpur-2000.webp"
+            class=""
+            src="/assets/images/kuala-lumpur-1200.webp"
             srcset="
               /assets/images/kuala-lumpur-640.webp   640w,
               /assets/images/kuala-lumpur-1200.webp 1200w,
               /assets/images/kuala-lumpur-2000.webp 2000w
             "
-            sizes="100vw"
+            sizes="(min-width: 900px) 22vw, 40vw"
             width="2000"
             height="1344"
-            alt="The Petronas Twin Towers above KLCC Park as Kuala Lumpur lights up at sunset"
+            alt="The illuminated Petronas Twin Towers and surrounding Kuala Lumpur skyline at dusk"
+            loading="eager"
+            decoding="async"
             fetchpriority="high"
           />
-          <div class="hero-shade" aria-hidden="true"></div>
-          <div class="hero-intro">
-            <span class="eyebrow light">PENINSULA / BORNEO</span>
-            <p>A country best felt<br />between its landmarks.</p>
-          </div>
-          <span class="hero-edition eyebrow light"
-            >INDEPENDENT EXPLORATION<br />VOLUME 01 / MALAYSIA</span
-          >
-          <h1 id="hero-title" class="hero-title" aria-label="Malaysia">
-            <span aria-hidden="true">M</span><span aria-hidden="true">A</span
-            ><span aria-hidden="true">L</span><span aria-hidden="true">A</span
-            ><span aria-hidden="true">Y</span><span aria-hidden="true">S</span
-            ><span aria-hidden="true">I</span><span aria-hidden="true">A</span>
-          </h1>
-          <div class="hero-bottom">
-            <span class="eyebrow light"
-              >03°09′ N / 101°43′ E<br />KUALA LUMPUR, AFTER HOURS</span
-            ><a href="#prologue" class="begin-link" data-magnetic
-              >Let’s wander
-              <span class="round-arrow" aria-hidden="true">↓</span></a
-            >
-          </div>
-        </div>
-        <div class="hero-footnote eyebrow">
-          <span>ONE COUNTRY. MANY RHYTHMS.</span
-          ><span>SCROLL TO FIND YOURS <span aria-hidden="true">↘</span></span>
-        </div>
-      </section>
-
-      <section
-        class="prologue scene"
-        id="prologue"
-        data-scene="The in-between"
-        aria-labelledby="prologue-title"
-      >
-        <div class="section-line">
-          <span class="eyebrow">00 / THE IN-BETWEEN</span
-          ><span class="small-symbol" aria-hidden="true">✳</span>
-        </div>
-        <div class="prologue-grid">
-          <h2 id="prologue-title" class="statement" data-reveal>
-            Not one story.<br />A thousand<br /><em>everyday ones.</em>
-          </h2>
-          <div class="prologue-copy" data-reveal>
-            <span class="orange-dot" aria-hidden="true"></span>
-            <p>Past the postcard view, there’s another Malaysia.</p>
-            <p>
-              A shop opening its shutters. A second cup of kopi. Rain arriving
-              before the afternoon is done.
-            </p>
-            <p>
-              This is a small collection of places, and the life happening
-              between them.
-            </p>
-            <a class="text-link" href="#streets"
-              >Start at street level <span aria-hidden="true">↗</span></a
-            >
-          </div>
-        </div>
-        <div class="prologue-bottom eyebrow">
-          <span>LOOK A LITTLE CLOSER</span><span>01 — 04</span>
-        </div>
-      </section>
-
-      <section
-        class="streets scene"
-        id="streets"
-        data-scene="Street level"
-        aria-labelledby="streets-title"
-      >
-        <div class="street-stage">
-          <div class="street-heading">
-            <span class="eyebrow">01 / STREET LEVEL</span>
-            <h2 id="streets-title">Follow the <em>everyday.</em></h2>
-            <span class="street-hint eyebrow"
-              >THREE FRAMES<br />ONE SHARED RHYTHM
-              <span aria-hidden="true">→</span></span
-            >
-          </div>
-          <div
-            class="street-window"
-            tabindex="0"
-            role="region"
-            aria-label="Street photographs"
-          >
-            <div class="street-track">
-              <article class="street-frame" id="frame-1">
-                <div class="street-photo">
-                  <img
-                    src="/assets/images/george-town-1200.webp"
-                    srcset="
-                      /assets/images/george-town-640.webp   640w,
-                      /assets/images/george-town-1200.webp 1200w,
-                      /assets/images/george-town-2000.webp 2000w
-                    "
-                    sizes="(min-width: 900px) 62vw, 94vw"
-                    width="1200"
-                    height="800"
-                    alt="A row of ornate heritage shophouses with green shutters in George Town, Penang"
-                    loading="lazy"
-                  /><span class="photo-label eyebrow">GEORGE TOWN / PENANG</span
-                  ><span class="frame-word" aria-hidden="true">WANDER.</span>
-                </div>
-                <div class="frame-caption">
-                  <span class="eyebrow">01 / THE FIVE-FOOT WAY</span>
-                  <p>
-                    A little shade. A slower pace.<br />The street carries on
-                    around you.
-                  </p>
-                </div>
-              </article>
-              <article class="street-frame" id="frame-2">
-                <div class="street-photo">
-                  <img
-                    src="/assets/images/petaling-street-1200.webp"
-                    srcset="
-                      /assets/images/petaling-street-640.webp   640w,
-                      /assets/images/petaling-street-1200.webp 1200w,
-                      /assets/images/petaling-street-2000.webp 2000w
-                    "
-                    sizes="(min-width: 900px) 62vw, 94vw"
-                    width="1200"
-                    height="800"
-                    alt="Customers gather around a soya bean drinks stall in Kuala Lumpur’s Petaling Street market"
-                    loading="lazy"
-                  /><span class="photo-label eyebrow"
-                    >PETALING STREET / KUALA LUMPUR</span
-                  ><span class="frame-word" aria-hidden="true">STOP.</span>
-                </div>
-                <div class="frame-caption">
-                  <span class="eyebrow">02 / SOMETHING COLD</span>
-                  <p>
-                    The familiar stall.<br />The order you don’t need to
-                    explain.
-                  </p>
-                </div>
-              </article>
-              <article class="street-frame" id="frame-3">
-                <div class="street-photo food-photo">
-                  <img
-                    src="/assets/images/nasi-lemak-1200.webp"
-                    srcset="
-                      /assets/images/nasi-lemak-640.webp   640w,
-                      /assets/images/nasi-lemak-1200.webp 1200w,
-                      /assets/images/nasi-lemak-2000.webp 2000w
-                    "
-                    sizes="(min-width: 900px) 62vw, 94vw"
-                    width="1200"
-                    height="800"
-                    alt="Nasi lemak with sambal and chicken served on a banana leaf at Ali Nasi Lemak in George Town"
-                    loading="lazy"
-                  /><span class="photo-label eyebrow"
-                    >LEBUH PANTAI / GEORGE TOWN</span
-                  ><span class="frame-word" aria-hidden="true">MAKAN.</span>
-                </div>
-                <div class="frame-caption">
-                  <span class="eyebrow">03 / THERE’S ALWAYS TIME TO EAT</span>
-                  <p>
-                    Rice, sambal, a banana leaf.<br />A small parcel with a
-                    place in the day.
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="street-controls">
-            <span class="eyebrow"><span id="street-count">01</span> / 03</span>
-            <div class="street-progress" aria-hidden="true"><span></span></div>
-            <div class="frame-buttons">
-              <button
-                aria-label="Previous street frame"
-                id="frame-prev"
-                disabled
-              >
-                ←</button
-              ><button aria-label="Next street frame" id="frame-next">→</button>
-            </div>
-            <span class="sr-only" id="frame-status" aria-live="polite"></span>
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="pause scene"
-        id="pause"
-        data-scene="A change of pace"
-        aria-labelledby="pause-title"
-      >
-        <span class="eyebrow">02 / A CHANGE OF PACE</span>
-        <h2 id="pause-title" data-reveal>
-          And then,<br />the road <em>runs out.</em>
-        </h2>
-        <div class="pause-bottom">
-          <p data-reveal>
-            Leave the city’s tempo behind.<br />There is room for another one.
+        </figure>
+        <div class="hero-copy">
+          <h1 id="hero-title">Malaysia,<br />between places.</h1>
+          <p>
+            A photographic journey from city streets to island water and the
+            mountains of Malaysian Borneo.
           </p>
-          <span class="pause-arrow" aria-hidden="true">↘</span>
+          <a class="button" href="#journey"
+            >Begin the journey <span aria-hidden="true">↓</span></a
+          >
         </div>
+        <figure class="print print-street">
+          <img
+            class="signature-image"
+            src="/assets/images/petaling-street-1200.webp"
+            srcset="
+              /assets/images/petaling-street-640.webp   640w,
+              /assets/images/petaling-street-1200.webp 1200w,
+              /assets/images/petaling-street-2000.webp 2000w
+            "
+            sizes="(min-width: 900px) 35vw, 75vw"
+            width="2000"
+            height="2000"
+            alt="A customer at a soya bean drinks stall on Petaling Street, Kuala Lumpur"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          />
+          <figcaption>Petaling Street, at the soya stall</figcaption>
+        </figure>
+        <figure class="print print-island">
+          <img
+            class=""
+            src="/assets/images/langkawi-1200.webp"
+            srcset="
+              /assets/images/langkawi-640.webp   640w,
+              /assets/images/langkawi-1200.webp 1200w,
+              /assets/images/langkawi-2000.webp 2000w
+            "
+            sizes="(min-width: 900px) 25vw, 90vw"
+            width="2000"
+            height="3556"
+            alt="Forested limestone rising above the water at Kilim Geoforest Park, Langkawi"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          />
+          <figcaption>Kilim, Langkawi</figcaption>
+        </figure>
       </section>
-
-      <section
-        class="coast scene"
-        id="coast"
-        data-scene="Island time"
-        aria-labelledby="coast-title"
-      >
-        <div class="coast-stage">
-          <div class="coast-backdrop" aria-hidden="true">
-            <span>LESS HURRY.</span><span>MORE HORIZON.</span>
+      <section class="journey section" id="journey">
+        <span class="anchor-alias" id="prologue" aria-hidden="true"></span>
+        <div class="section-intro">
+          <h2 data-rise>At street level.</h2>
+          <p data-rise>
+            A skyline tells you where you are. A street tells you how a place
+            moves. Start with a shaded walkway, a stall, a parcel of rice.
+          </p>
+        </div>
+        <figure class="panorama">
+          <img
+            class="drift-image"
+            src="/assets/images/george-town-1200.webp"
+            srcset="
+              /assets/images/george-town-640.webp   640w,
+              /assets/images/george-town-1200.webp 1200w,
+              /assets/images/george-town-2000.webp 2000w
+            "
+            sizes="100vw"
+            width="2000"
+            height="1333"
+            alt="A row of George Town shophouses with green shutters and sheltered walkways"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            George Town’s shophouses.
+            <a href="/credits/#george-town">Eugene Lim / Unsplash</a>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="streets section" id="streets">
+        <div class="gallery-heading">
+          <h2 data-rise>The everyday,<br />in focus.</h2>
+          <div class="gallery-controls" hidden>
+            <button
+              id="frame-prev"
+              type="button"
+              aria-label="Previous street photograph"
+            >
+              ←</button
+            ><button
+              id="frame-next"
+              type="button"
+              aria-label="Next street photograph"
+            >
+              →</button
+            ><span id="frame-status" role="status" aria-live="polite"
+              >George Town</span
+            >
           </div>
-          <div class="coast-portal">
+        </div>
+        <div
+          class="street-track"
+          role="region"
+          tabindex="0"
+          aria-label="Street photographs; use arrow keys or the previous and next buttons"
+        >
+          <figure class="street-frame">
             <img
-              src="/assets/images/langkawi-2000.webp"
+              class=""
+              src="/assets/images/george-town-1200.webp"
               srcset="
-                /assets/images/langkawi-640.webp   640w,
-                /assets/images/langkawi-1200.webp 1200w,
-                /assets/images/langkawi-2000.webp 2000w
+                /assets/images/george-town-640.webp   640w,
+                /assets/images/george-town-1200.webp 1200w,
+                /assets/images/george-town-2000.webp 2000w
               "
-              sizes="100vw"
+              sizes="(min-width: 900px) 55vw, 90vw"
               width="2000"
               height="1333"
-              alt="Forested limestone islands surrounded by turquoise water off Langkawi"
+              alt="A row of George Town shophouses with green shutters and sheltered walkways"
               loading="lazy"
+              decoding="async"
             />
+            <figcaption>
+              <h3>Under the shutters</h3>
+              <p>George Town, Penang. Photograph by Eugene Lim.</p>
+            </figcaption>
+          </figure>
+          <figure class="street-frame">
+            <img
+              class=""
+              src="/assets/images/petaling-street-1200.webp"
+              srcset="
+                /assets/images/petaling-street-640.webp   640w,
+                /assets/images/petaling-street-1200.webp 1200w,
+                /assets/images/petaling-street-2000.webp 2000w
+              "
+              sizes="(min-width: 900px) 55vw, 90vw"
+              width="2000"
+              height="2000"
+              alt="A customer at a soya bean drinks stall on Petaling Street, Kuala Lumpur"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <h3>A pause at the stall</h3>
+              <p>
+                Petaling Street, Kuala Lumpur. Photograph by Kamaruld Salleh.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="street-frame">
+            <img
+              class=""
+              src="/assets/images/nasi-lemak-1200.webp"
+              srcset="
+                /assets/images/nasi-lemak-640.webp   640w,
+                /assets/images/nasi-lemak-1200.webp 1200w,
+                /assets/images/nasi-lemak-2000.webp 2000w
+              "
+              sizes="(min-width: 900px) 55vw, 90vw"
+              width="2000"
+              height="1333"
+              alt="Nasi lemak with sambal served on a banana leaf in George Town"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <h3>A parcel of the day</h3>
+              <p>Nasi lemak in George Town. Photograph by You Le.</p>
+            </figcaption>
+          </figure>
+        </div>
+        <p class="gallery-note">
+          Three moments, two cities.
+          <a href="/destinations/george-town/"
+            >Read George Town <span aria-hidden="true">↗</span></a
+          >
+          <a href="/destinations/kuala-lumpur/"
+            >Read Kuala Lumpur <span aria-hidden="true">↗</span></a
+          >
+        </p>
+      </section>
+      <section
+        class="coast section scene"
+        id="coast"
+        data-scene="opening-landscape"
+      >
+        <div class="coast-stage scene-stage">
+          <div class="coast-heading">
+            <h2 data-rise>Land meets water.</h2>
+            <p>
+              Off Kedah’s northwestern coast, Langkawi brings limestone, forest
+              and tidal water into the same frame.
+            </p>
           </div>
-          <div class="coast-overlay">
-            <span class="eyebrow light">03 / ISLAND TIME</span>
-            <h2 id="coast-title">Let the day<br /><em>take its time.</em></h2>
-            <div class="coast-bottom">
-              <p>Langkawi, Kedah.<br />Between forest, limestone, and sea.</p>
-              <span class="eyebrow light"
-                >06°18′ N / 99°51′ E<br />THE ANDAMAN EDGE</span
-              >
+          <figure class="coast-window">
+            <div class="coast-photo">
+              <img
+                class=""
+                src="/assets/images/langkawi-1200.webp"
+                srcset="
+                  /assets/images/langkawi-640.webp   640w,
+                  /assets/images/langkawi-1200.webp 1200w,
+                  /assets/images/langkawi-2000.webp 2000w
+                "
+                sizes="100vw"
+                width="2000"
+                height="3556"
+                alt="Forested limestone rising above the water at Kilim Geoforest Park, Langkawi"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
-          </div>
+            <figcaption>
+              Kilim Geoforest Park, Langkawi · Abdulrhman Alkhnaifer
+            </figcaption>
+          </figure>
+          <a class="coast-link text-link" href="/destinations/langkawi/"
+            >Enter the Langkawi portrait <span aria-hidden="true">↗</span></a
+          >
         </div>
       </section>
-
-      <section
-        class="borneo scene"
-        id="borneo"
-        data-scene="Across the water"
-        aria-labelledby="borneo-title"
-      >
-        <div class="section-line">
-          <span class="eyebrow">04 / ACROSS THE WATER</span
-          ><span class="eyebrow">SABAH, MALAYSIAN BORNEO</span>
-        </div>
-        <div class="borneo-heading">
-          <h2 id="borneo-title" data-reveal>
-            A different<br />kind of <em>high.</em>
-          </h2>
-          <p data-reveal>
-            Across the South China Sea,<br />the scale changes.<br /><br />Forest
-            gives way to granite.<br />Kinabalu rises through the clouds.
+      <section class="borneo section" id="borneo">
+        <div class="section-intro">
+          <h2 data-rise>Across to Borneo.</h2>
+          <p data-rise>
+            Sabah is a state on northern Borneo, across the South China Sea from
+            the peninsula. Here, a mountain and a forest stream change the scale
+            of looking.
           </p>
         </div>
-        <div class="borneo-collage">
-          <figure class="mountain-photo">
+        <div class="borneo-pictures">
+          <figure class="mountain">
             <img
-              src="/assets/images/kinabalu-2000.webp"
+              class="drift-image"
+              src="/assets/images/kinabalu-1200.webp"
               srcset="
                 /assets/images/kinabalu-640.webp   640w,
                 /assets/images/kinabalu-1200.webp 1200w,
                 /assets/images/kinabalu-2000.webp 2000w
               "
-              sizes="(min-width: 900px) 70vw, 100vw"
+              sizes="(min-width: 768px) 70vw, 95vw"
               width="2000"
-              height="1333"
-              alt="Mount Kinabalu beyond rolling forested hills under drifting clouds"
+              height="979"
+              alt="The granite ridgeline of Mount Kinabalu behind forested hills in Sabah"
               loading="lazy"
+              decoding="async"
             />
-            <figcaption class="eyebrow">
-              MOUNT KINABALU / 4,095.2 M ABOVE SEA LEVEL
-            </figcaption>
+            <figcaption>Mount Kinabalu · EJ Yao</figcaption>
           </figure>
-          <figure class="forest-photo">
+          <figure class="stream">
             <img
+              class=""
               src="/assets/images/rainforest-1200.webp"
               srcset="
                 /assets/images/rainforest-640.webp   640w,
-                /assets/images/rainforest-1200.webp 1200w
+                /assets/images/rainforest-1200.webp 1200w,
+                /assets/images/rainforest-2000.webp 2000w
               "
-              sizes="(min-width: 900px) 30vw, 66vw"
-              width="1200"
-              height="800"
-              alt="Clear water runs over rocks in the dense forest at Mari Mari Cultural Village, Sabah"
+              sizes="(min-width: 768px) 28vw, 65vw"
+              width="2000"
+              height="1333"
+              alt="A rocky forest stream at Mari Mari Cultural Village in Sabah"
               loading="lazy"
+              decoding="async"
             />
-            <figcaption class="eyebrow">
-              INANAM / A QUIETER KIND OF CURRENT
+            <figcaption>Mari Mari Cultural Village, Sabah · You Le</figcaption>
+          </figure>
+          <div class="borneo-copy">
+            <p>The view opens out.<br />Then it comes close again.</p>
+            <a class="text-link" href="/destinations/sabah/"
+              >Read the Sabah portrait <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="places section" id="places">
+        <span class="anchor-alias" id="field-notes" aria-hidden="true"></span>
+        <div class="section-intro">
+          <h2 data-rise>Find your own pace.</h2>
+          <p data-rise>
+            Four places, four independent portraits. Choose a preview, then
+            follow the place that holds your attention.
+          </p>
+        </div>
+        <div class="place-index">
+          <div class="place-rows">
+            <div class="place-row">
+              <a href="/destinations/kuala-lumpur/"
+                ><span>Kuala Lumpur</span><small>City & street</small
+                ><span aria-hidden="true">↗</span></a
+              ><button
+                class="preview-button"
+                data-place="kuala-lumpur"
+                type="button"
+                aria-label="Preview Kuala Lumpur"
+                aria-pressed="true"
+                hidden
+              >
+                Preview
+              </button>
+            </div>
+            <div class="place-row">
+              <a href="/destinations/george-town/"
+                ><span>George Town</span><small>Heritage & everyday life</small
+                ><span aria-hidden="true">↗</span></a
+              ><button
+                class="preview-button"
+                data-place="george-town"
+                type="button"
+                aria-label="Preview George Town"
+                aria-pressed="false"
+                hidden
+              >
+                Preview
+              </button>
+            </div>
+            <div class="place-row">
+              <a href="/destinations/langkawi/"
+                ><span>Langkawi</span><small>Limestone & tidal water</small
+                ><span aria-hidden="true">↗</span></a
+              ><button
+                class="preview-button"
+                data-place="langkawi"
+                type="button"
+                aria-label="Preview Langkawi"
+                aria-pressed="false"
+                hidden
+              >
+                Preview
+              </button>
+            </div>
+            <div class="place-row">
+              <a href="/destinations/sabah/"
+                ><span>Sabah</span><small>Granite & forest</small
+                ><span aria-hidden="true">↗</span></a
+              ><button
+                class="preview-button"
+                data-place="sabah"
+                type="button"
+                aria-label="Preview Sabah"
+                aria-pressed="false"
+                hidden
+              >
+                Preview
+              </button>
+            </div>
+          </div>
+          <figure class="place-preview">
+            <div class="preview-photo">
+              <img
+                class=""
+                src="/assets/images/kuala-lumpur-1200.webp"
+                srcset="
+                  /assets/images/kuala-lumpur-640.webp   640w,
+                  /assets/images/kuala-lumpur-1200.webp 1200w,
+                  /assets/images/kuala-lumpur-2000.webp 2000w
+                "
+                sizes="(min-width: 768px) 45vw, 90vw"
+                width="2000"
+                height="1344"
+                alt="Kuala Lumpur skyline at dusk"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <figcaption>
+              <h3 id="preview-title">A city read at two heights.</h3>
+              <p id="preview-copy">
+                Glass and steel above; counters and conversations below. Follow
+                the city from its skyline to Petaling Street.
+              </p>
+              <a
+                id="preview-link"
+                class="text-link"
+                href="/destinations/kuala-lumpur/"
+                >Read Kuala Lumpur <span aria-hidden="true">↗</span></a
+              >
             </figcaption>
           </figure>
-          <span class="borneo-letter" aria-hidden="true">B.</span>
         </div>
-        <p class="borneo-note">
-          Some places ask you<br />to look. Others ask you<br />to stand still.
-        </p>
+        <script type="application/json" id="place-data">
+          [
+            {
+              "slug": "kuala-lumpur",
+              "name": "Kuala Lumpur",
+              "image": "kuala-lumpur",
+              "intro": "A city read at two heights.",
+              "preview": "Glass and steel above; counters and conversations below. Follow the city from its skyline to Petaling Street.",
+              "alt": "The illuminated Petronas Twin Towers and surrounding Kuala Lumpur skyline at dusk",
+              "dimensions": [2000, 1344]
+            },
+            {
+              "slug": "george-town",
+              "name": "George Town",
+              "image": "george-town",
+              "intro": "The street is still the story.",
+              "preview": "Shutters, five-foot ways and a parcel of rice. A living streetscape on the island of Penang.",
+              "alt": "A row of George Town shophouses with green shutters and sheltered walkways",
+              "dimensions": [2000, 1333]
+            },
+            {
+              "slug": "langkawi",
+              "name": "Langkawi",
+              "image": "langkawi",
+              "intro": "Follow the edge of the island.",
+              "preview": "At Kilim, forest and limestone meet tidal water. An island landscape that changes with the way you look.",
+              "alt": "Forested limestone rising above the water at Kilim Geoforest Park, Langkawi",
+              "dimensions": [2000, 3556]
+            },
+            {
+              "slug": "sabah",
+              "name": "Sabah",
+              "image": "kinabalu",
+              "intro": "A mountain changes the scale.",
+              "preview": "Across the South China Sea, Kinabalu rises above the forest. A stream brings the view close again.",
+              "alt": "The granite ridgeline of Mount Kinabalu behind forested hills in Sabah",
+              "dimensions": [2000, 979]
+            }
+          ]
+        </script>
       </section>
-
-      <section
-        class="field-notes scene"
-        id="field-notes"
-        data-scene="Field notes"
-        aria-labelledby="notes-title"
-      >
-        <div class="section-line">
-          <span class="eyebrow">THE OPEN INDEX</span
-          ><span class="eyebrow">FOUR PLACES / YOUR OWN PACE</span>
+      <section class="studio section" id="studio">
+        <span class="anchor-alias" id="ending" aria-hidden="true"></span
+        ><span class="anchor-alias" id="about" aria-hidden="true"></span>
+        <div class="studio-photos">
+          <img
+            class=""
+            src="/assets/images/petaling-street-1200.webp"
+            srcset="
+              /assets/images/petaling-street-640.webp   640w,
+              /assets/images/petaling-street-1200.webp 1200w,
+              /assets/images/petaling-street-2000.webp 2000w
+            "
+            sizes="33vw"
+            width="2000"
+            height="2000"
+            alt="A customer at a soya bean drinks stall on Petaling Street, Kuala Lumpur"
+            loading="lazy"
+            decoding="async"
+          /><img
+            class=""
+            src="/assets/images/langkawi-1200.webp"
+            srcset="
+              /assets/images/langkawi-640.webp   640w,
+              /assets/images/langkawi-1200.webp 1200w,
+              /assets/images/langkawi-2000.webp 2000w
+            "
+            sizes="33vw"
+            width="2000"
+            height="3556"
+            alt="Forested limestone rising above the water at Kilim Geoforest Park, Langkawi"
+            loading="lazy"
+            decoding="async"
+          /><img
+            class=""
+            src="/assets/images/kinabalu-1200.webp"
+            srcset="
+              /assets/images/kinabalu-640.webp   640w,
+              /assets/images/kinabalu-1200.webp 1200w,
+              /assets/images/kinabalu-2000.webp 2000w
+            "
+            sizes="33vw"
+            width="2000"
+            height="979"
+            alt="The granite ridgeline of Mount Kinabalu behind forested hills in Sabah"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
-        <div class="notes-heading">
-          <h2 id="notes-title" data-reveal>Stay <em>curious.</em></h2>
-          <p>Select a place.<br />Keep a small piece of it.</p>
-        </div>
-        <div class="notes-grid">
-          <div
-            class="place-list"
-            role="group"
-            aria-label="Choose a place to explore"
-          >
-            <button
-              class="place-choice is-active"
-              data-place="0"
-              aria-pressed="true"
-              aria-controls="place-detail"
+        <div class="studio-copy">
+          <h2 data-rise>A place for stories.</h2>
+          <div>
+            <p>
+              Between Places is an independent editorial experiment by Ismail
+              Studio. Photography, typography and movement turn a small
+              collection of places into a digital journey.
+            </p>
+            <a
+              class="button"
+              href="https://ismailstudio.my/"
+              data-cta-placement="story"
+              >See the studio behind this site
+              <span aria-hidden="true">↗</span></a
             >
-              <span class="eyebrow">01</span><span>Kuala Lumpur</span
-              ><span class="place-arrow" aria-hidden="true">↗</span>
-            </button>
-            <button
-              class="place-choice"
-              data-place="1"
-              aria-pressed="false"
-              aria-controls="place-detail"
-            >
-              <span class="eyebrow">02</span><span>George Town</span
-              ><span class="place-arrow" aria-hidden="true">↗</span>
-            </button>
-            <button
-              class="place-choice"
-              data-place="2"
-              aria-pressed="false"
-              aria-controls="place-detail"
-            >
-              <span class="eyebrow">03</span><span>Langkawi</span
-              ><span class="place-arrow" aria-hidden="true">↗</span>
-            </button>
-            <button
-              class="place-choice"
-              data-place="3"
-              aria-pressed="false"
-              aria-controls="place-detail"
-            >
-              <span class="eyebrow">04</span><span>Sabah</span
-              ><span class="place-arrow" aria-hidden="true">↗</span>
-            </button>
-          </div>
-          <div class="place-detail" id="place-detail">
-            <div class="place-image-wrap">
-              <img
-                id="place-image"
-                src="/assets/images/kuala-lumpur-1200.webp"
-                width="1200"
-                height="806"
-                alt="Petronas Twin Towers above KLCC Park at sunset"
-                loading="lazy"
-              /><span class="place-stamp eyebrow" id="place-coordinate"
-                >03°09′ N<br />101°43′ E</span
-              >
-            </div>
-            <div
-              class="place-detail-copy"
-              aria-live="polite"
-              aria-atomic="true"
-            >
-              <h3 id="place-title">The city, in layers.</h3>
-              <p id="place-copy">
-                Glass and steel above. Market stalls below. Kuala Lumpur is best
-                read at more than one height.
-              </p>
-            </div>
-            <a id="place-link" href="#home" class="text-link"
-              >Revisit the skyline <span aria-hidden="true">↗</span></a
+            <p class="studio-small">
+              Have a story of your own? See the work and get in touch through
+              the studio.
+            </p>
+            <a
+              class="text-link"
+              href="https://ismailstudio.my/"
+              data-cta-placement="closing"
+              >Explore Ismail Studio <span aria-hidden="true">↗</span></a
             >
           </div>
         </div>
-        <noscript
-          ><p>
-            The complete journey and its photographs are available above. Use
-            the index to revisit each place.
-          </p></noscript
-        >
       </section>
     </main>
-    <footer
-      class="ending scene"
-      id="ending"
-      data-scene="Until next time"
-      aria-labelledby="ending-title"
-    >
-      <div class="section-line">
-        <span class="eyebrow">A SMALL COLLECTION. A MUCH BIGGER COUNTRY.</span
-        ><span class="small-symbol" aria-hidden="true">✳</span>
-      </div>
-      <p class="ending-prelude">
-        There’s more, of course.<br />There always is.
-      </p>
-      <h2 id="ending-title">
-        <span>SAMPAI</span
-        ><span
-          ><em>jumpa.</em
-          ><a
-            class="return-link"
-            href="#home"
-            aria-label="Return to the beginning"
-            data-magnetic
-            ><span aria-hidden="true">↗</span></a
-          ></span
-        >
-      </h2>
-      <div class="ending-bottom">
-        <p>
-          Until we meet again.<br /><span
-            >Made of places. Remembered in moments.</span
+    <footer class="footer">
+      <div class="footer-top">
+        <p>An independent Malaysian<br />editorial by Ismail Studio.</p>
+        <nav aria-label="Footer">
+          <a href="/#places">Explore the places</a
+          ><a id="credits" href="/credits/">Photography & credits</a
+          ><a href="/credits/#privacy">Privacy & measurement</a>
+        </nav>
+        <div>
+          <a
+            class="text-link"
+            href="https://ismailstudio.my/"
+            data-cta-placement="footer"
+            >Visit Ismail Studio <span aria-hidden="true">↗</span></a
+          ><a class="back-top" href="#top"
+            >Back to top <span aria-hidden="true">↑</span></a
           >
-        </p>
-        <div class="footer-links">
-          <button data-dialog="about" aria-haspopup="dialog">
-            About this experiment ↗</button
-          ><button data-dialog="credits" aria-haspopup="dialog">
-            Photography & credits ↗
-          </button>
         </div>
       </div>
-      <div class="footer-colophon eyebrow">
-        <span>MY / BETWEEN PLACES</span
-        ><span>AN INDEPENDENT DIGITAL EXPERIMENT / 2026</span
-        ><a href="#home">BACK TO TOP ↑</a>
-      </div>
-      <div class="footer-signature">
-        <img
-          src="/built-by-ismail.png"
-          alt="Built by Ismail"
-          width="2048"
-          height="682"
-          loading="lazy"
-          decoding="async"
-        />
+      <p class="footer-name" aria-hidden="true">Between Places.</p>
+      <div class="footer-bottom">
+        <p>Malaysia, seen a little closer.</p>
+        <a
+          href="https://ismailstudio.my/"
+          data-cta-placement="signature"
+          aria-label="Built by Ismail — visit Ismail Studio"
+          ><img
+            src="/built-by-ismail.png"
+            width="240"
+            height="40"
+            alt="Built by Ismail"
+            loading="lazy"
+        /></a>
+        <p>Independent project · 2026</p>
       </div>
     </footer>
-    <div class="journey-meter" aria-hidden="true">
-      <span id="journey-label">INTRODUCTION</span
-      ><span class="journey-track"><i></i></span
-      ><span id="journey-percent">00</span>
-    </div>
-    <div class="pointer" aria-hidden="true"><span>LOOK</span></div>
-
-    <dialog id="menu" class="menu-dialog" aria-labelledby="menu-title">
-      <div class="dialog-bar">
-        <span class="eyebrow">MY / BETWEEN PLACES</span
-        ><button class="dialog-close" aria-label="Close index" autofocus>
-          Close <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <div class="menu-body">
-        <p class="eyebrow" id="menu-title">FIND YOUR RHYTHM</p>
-        <nav aria-label="Journey index">
-          <a href="#home"
-            ><span class="eyebrow">00</span><span>The beginning</span
-            ><span aria-hidden="true">↗</span></a
-          ><a href="#streets"
-            ><span class="eyebrow">01</span><span>Street level</span
-            ><span aria-hidden="true">↗</span></a
-          ><a href="#coast"
-            ><span class="eyebrow">02</span><span>Island time</span
-            ><span aria-hidden="true">↗</span></a
-          ><a href="#borneo"
-            ><span class="eyebrow">03</span><span>Across the water</span
-            ><span aria-hidden="true">↗</span></a
-          ><a href="#field-notes"
-            ><span class="eyebrow">04</span><span>Field notes</span
-            ><span aria-hidden="true">↗</span></a
-          >
-        </nav>
-        <div class="menu-bottom">
-          <p>From the peninsula<br />to Malaysian Borneo.</p>
-          <span class="menu-symbol" aria-hidden="true">✳</span>
-        </div>
-      </div>
-    </dialog>
-    <dialog id="about" class="info-dialog" aria-labelledby="about-title">
-      <div class="dialog-bar">
-        <span class="eyebrow">ABOUT THE EXPERIMENT</span
-        ><button class="dialog-close" aria-label="Close about" autofocus>
-          Close ×
-        </button>
-      </div>
-      <div class="info-content">
-        <h2 id="about-title">Between<br /><em>Places.</em></h2>
-        <p>
-          An independent exploration of Malaysian places and everyday rhythms,
-          made with HTML, CSS, vanilla JavaScript, and GSAP.
-        </p>
-        <p>
-          This is a creative development showcase, not a travel booking service
-          or an official tourism campaign. The places and photographs are real;
-          the journey is a small, personal editorial selection.
-        </p>
-        <p>
-          Designed to show how considered typography, motion, and interaction
-          can give a place, a café, or a local business a distinct digital
-          presence.
-        </p>
-        <a
-          class="text-link"
-          href="https://www.malaysia.travel/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >More about Malaysia <span aria-hidden="true">↗</span></a
-        >
-      </div>
-    </dialog>
-    <dialog id="credits" class="info-dialog" aria-labelledby="credits-title">
-      <div class="dialog-bar">
-        <span class="eyebrow">THE PEOPLE BEHIND THE IMAGES</span
-        ><button class="dialog-close" aria-label="Close credits" autofocus>
-          Close ×
-        </button>
-      </div>
-      <div class="info-content">
-        <h2 id="credits-title">Seen through<br /><em>their eyes.</em></h2>
-        <p>
-          Authentic photographs, locally optimized and used under the
-          <a
-            href="https://unsplash.com/license"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Unsplash License</a
-          >.
-        </p>
-        <ul class="credit-list">
-          <li>
-            <a
-              href="https://unsplash.com/photos/-9B08uduMyY"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><span>Kuala Lumpur</span><span>Esmonde Yong ↗</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://unsplash.com/photos/5qfXH4V7ioY"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><span>George Town</span><span>Eugene Lim ↗</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://unsplash.com/photos/N0EgpckkgPo"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><span>Petaling Street</span><span>Kamaruld Salleh ↗</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://unsplash.com/photos/o5UmAx8vEjg"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><span>Nasi lemak</span><span>You Le ↗</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://unsplash.com/photos/6tpE45AjeL8"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><span>Langkawi</span><span>Abdulrhman Alkhnaifer ↗</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://unsplash.com/photos/IAZ__Cm1psk"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><span>Kinabalu</span><span>EJ Yao ↗</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://unsplash.com/photos/uv82e8q-91k"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><span>Forest stream</span><span>You Le ↗</span></a
-            >
-          </li>
-        </ul>
-        <p class="credit-small">
-          Barlow Condensed, Manrope, and Instrument Serif — open-source
-          typefaces under the SIL Open Font License. Motion by GSAP and its
-          official ScrollTrigger plugin.
-        </p>
-        <p class="credit-small">
-          Place context:
-          <a
-            href="https://www.malaysia.travel/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Tourism Malaysia</a
-          >
-          and
-          <a
-            href="https://sabahtourism.com/destination/mount-kinabalu/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Sabah Tourism Board</a
-          >.
-        </p>
-      </div>
-    </dialog>
   </body>
 </html>

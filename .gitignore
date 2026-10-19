@@ -1,0 +1,15 @@
+node_modules/
+dist/
+dist-preview/
+.wrangler/
+.vercel/
+.taste-skill/
+.playwright-cli/
+output/
+.env*
+.dev.vars*
+*.log
+*.malaysia-build.tmp
+__pycache__/
+.agents/
+codex-handoff/progress/raw/

@@ -1,0 +1,32 @@
+{
+  "name": "malaysia",
+  "version": "1.0.0",
+  "description": "Malaysia — Between Places: a vanilla photographic editorial",
+  "scripts": {
+    "test": "npm run verify",
+    "generate": "py scripts/generate_site.py",
+    "build": "py codex-handoff/scripts/build_static.py --clean",
+    "audit": "py codex-handoff/scripts/audit_static.py --root dist",
+    "verify": "npm run build && npm run audit && node scripts/run-verification.mjs",
+    "preview": "node scripts/serve.mjs dist 8001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ismailabs/malaysia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ismailabs/malaysia/issues"
+  },
+  "homepage": "https://github.com/ismailabs/malaysia#readme",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1",
+    "lighthouse": "^13.5.0",
+    "wrangler": "^4.151.2"
+  },
+  "private": true
+}

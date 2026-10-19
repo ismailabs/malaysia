@@ -1,0 +1,16 @@
+{
+  "primary_conversion": "portfolio_outbound_click",
+  "conversion_destination": "https://ismailstudio.my/",
+  "event_contract": {
+    "name": "portfolio_outbound_click",
+    "attributes": ["cta_placement", "source_path", "destination_host", "story_chapter"],
+    "forbidden_payloads": ["email", "name", "precise_location", "free_text", "raw_query_string"]
+  },
+  "placements": ["header", "editorial_interlude", "closing", "destination_footer"],
+  "analytics": {
+    "privacy_first": "Cloudflare Web Analytics or equivalently consent-appropriate permitted tool",
+    "ga4": "Only when valid Measurement ID, permissions and necessary consent exist",
+    "status": "not_configured_by_handoff"
+  },
+  "report_only_after_verified": ["page_view", "portfolio_outbound_click", "consent_behavior", "cross_origin_navigation"]
+}

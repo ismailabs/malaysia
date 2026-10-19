@@ -1,0 +1,15 @@
+// TEMPLATE ONLY. Copy to repository root as wrangler.jsonc after verifying account,
+// name uniqueness, custom-domain conflicts, current Wrangler schema and preview deployment.
+// The directory MUST be ./dist, not ./ (avoid publishing .agents or handoff files).
+{
+  "name": "malaysia-between-places",
+  "compatibility_date": "2026-10-19",
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "malaysia.ismailstudio.my", "custom_domain": true }
+  ]
+}

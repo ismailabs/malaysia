@@ -5,3 +5,13 @@ scripts
 node_modules
 .env*
 assets/fonts/*.ttf
+.agents
+codex-handoff
+.taste-skill
+.playwright-cli
+.wrangler
+output
+dist-preview
+AGENTS.md
+skills-lock.json
+wrangler.jsonc

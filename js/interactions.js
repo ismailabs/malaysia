@@ -1,241 +1,160 @@
-const PLACES = [
-  {
-    image: "kuala-lumpur",
-    alt: "Petronas Twin Towers above KLCC Park at sunset",
-    coordinate: "03°09′ N\n101°43′ E",
-    title: "The city, in layers.",
-    copy: "Glass and steel above. Market stalls below. Kuala Lumpur is best read at more than one height.",
-    href: "#home",
-    link: "Revisit the skyline",
-  },
-  {
-    image: "george-town",
-    alt: "Ornate heritage shophouses with green shutters in George Town, Penang",
-    coordinate: "05°25′ N\n100°20′ E",
-    title: "Read the street.",
-    copy: "George Town’s shophouses hold more than their façades. Walk the five-foot ways; leave room for whatever catches your eye.",
-    href: "#streets",
-    link: "Return to street level",
-  },
-  {
-    image: "langkawi",
-    alt: "A limestone island covered with forest in Langkawi’s Kilim Geoforest Park",
-    coordinate: "06°18′ N\n99°51′ E",
-    title: "The long way around.",
-    copy: "At Kilim, mangrove roots meet limestone and tidal water. Langkawi has a different view around every bend.",
-    href: "#coast",
-    link: "Find island time",
-  },
-  {
-    image: "kinabalu",
-    alt: "Mount Kinabalu rising behind green forested hills in Sabah",
-    coordinate: "06°04′ N\n116°33′ E",
-    title: "A mountain sets the scale.",
-    copy: "Kinabalu rises to 4,095.2 metres. Below its granite summit, the forests of Sabah carry on at their own pace.",
-    href: "#borneo",
-    link: "Cross to Borneo",
-  },
-];
+const quiet = () =>
+  matchMedia("(prefers-reduced-motion: reduce)").matches ||
+  document.body.dataset.motion === "paused";
+export function initGallery() {
+  const track = document.querySelector(".street-track");
+  if (!track) return () => {};
+  const events = new AbortController();
+  const opts = { signal: events.signal };
+  const frames = [...track.querySelectorAll(".street-frame")];
+  const prev = document.querySelector("#frame-prev");
+  const next = document.querySelector("#frame-next");
+  const status = document.querySelector("#frame-status");
+  const names = ["George Town", "Petaling Street", "Nasi lemak"];
+  let current = 0;
+  let pending = false;
+  document.querySelector(".gallery-controls").hidden = false;
+  function destination(i) {
+    return Math.max(
+      0,
+      Math.min(
+        track.scrollWidth - track.clientWidth,
+        frames[i].offsetLeft - frames[0].offsetLeft,
+      ),
+    );
+  }
+  function update() {
+    pending = false;
+    const positions = frames.map((_, i) =>
+      Math.abs(track.scrollLeft - destination(i)),
+    );
+    current = positions.indexOf(Math.min(...positions));
+    prev.disabled = current === 0;
+    next.disabled = current === frames.length - 1;
+    status.textContent = names[current];
+  }
+  function go(i) {
+    const target = Math.max(0, Math.min(frames.length - 1, i));
+    track.scrollTo({
+      left: destination(target),
+      behavior: quiet() ? "instant" : "smooth",
+    });
+  }
+  prev.addEventListener("click", () => go(current - 1), opts);
+  next.addEventListener("click", () => go(current + 1), opts);
+  track.addEventListener(
+    "keydown",
+    (event) => {
+      if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key))
+        return;
+      event.preventDefault();
+      go(
+        event.key === "Home"
+          ? 0
+          : event.key === "End"
+            ? frames.length - 1
+            : current + (event.key === "ArrowRight" ? 1 : -1),
+      );
+    },
+    opts,
+  );
+  track.addEventListener(
+    "scroll",
+    () => {
+      if (!pending) {
+        pending = true;
+        requestAnimationFrame(update);
+      }
+    },
+    { ...opts, passive: true },
+  );
+  window.addEventListener("resize", update, opts);
+  update();
+  return () => events.abort();
+}
 
 export function initPlaces() {
-  const buttons = [...document.querySelectorAll(".place-choice")];
-  const image = document.querySelector("#place-image");
-  const wrapper = image.parentElement;
-  const controller = new AbortController();
-  let selected = 0;
+  const source = document.querySelector("#place-data");
+  if (!source) return () => {};
+  const places = JSON.parse(source.textContent);
+  const buttons = [...document.querySelectorAll(".preview-button")];
+  const image = document.querySelector(".place-preview img");
+  const title = document.querySelector("#preview-title");
+  const copy = document.querySelector("#preview-copy");
+  const link = document.querySelector("#preview-link");
+  const events = new AbortController();
   let revision = 0;
-  let activeTween;
-  const warmed = new Set();
-  function warm(index) {
-    if (warmed.has(index)) return;
-    warmed.add(index);
-    const img = new Image();
-    img.src = `/assets/images/${PLACES[index].image}-1200.webp`;
-  }
-  async function select(index) {
-    if (index === selected) return;
-    selected = index;
-    const ownRevision = ++revision;
-    const place = PLACES[index];
-    buttons.forEach((button, i) => {
-      button.classList.toggle("is-active", i === index);
-      button.setAttribute("aria-pressed", String(i === index));
-    });
-    const next = new Image();
-    next.src = `/assets/images/${place.image}-1200.webp`;
+  let tween;
+  const opts = { signal: events.signal };
+  copy.parentElement.setAttribute("aria-live", "polite");
+  async function select(i) {
+    const mine = ++revision;
+    const place = places[i];
+    const preload = new Image();
+    preload.src = `/assets/images/${place.image}-1200.webp`;
     try {
-      await next.decode();
+      await preload.decode();
     } catch {
       return;
     }
-    if (ownRevision !== revision) return;
-    activeTween?.kill();
-    image.src = next.src;
+    if (mine !== revision || events.signal.aborted) return;
+    buttons.forEach((b, index) =>
+      b.setAttribute("aria-pressed", String(index === i)),
+    );
+    tween?.kill();
+    image.srcset = [640, 1200, 2000]
+      .map((w) => `/assets/images/${place.image}-${w}.webp ${w}w`)
+      .join(", ");
+    image.src = preload.src;
     image.alt = place.alt;
-    document.querySelector("#place-coordinate").textContent = place.coordinate;
-    document.querySelector("#place-title").textContent = place.title;
-    document.querySelector("#place-copy").textContent = place.copy;
-    const link = document.querySelector("#place-link");
-    link.href = place.href;
-    link.replaceChildren(document.createTextNode(place.link + " "));
+    image.width = place.dimensions[0];
+    image.height = place.dimensions[1];
+    image.style.objectPosition =
+      place.slug === "langkawi" ? "center 57%" : "center";
+    title.textContent = place.intro;
+    copy.textContent = place.preview;
+    link.href = `/destinations/${place.slug}/`;
     const arrow = document.createElement("span");
-    arrow.textContent = "↗";
     arrow.setAttribute("aria-hidden", "true");
-    link.append(arrow);
-    if (
-      window.gsap &&
-      !matchMedia("(prefers-reduced-motion: reduce)").matches
-    ) {
-      activeTween = gsap.fromTo(
+    arrow.textContent = "↗";
+    link.replaceChildren(document.createTextNode(`Read ${place.name} `), arrow);
+    if (window.gsap && !quiet())
+      tween = gsap.fromTo(
         image,
-        { clipPath: "inset(0 0 100% 0)", scale: 1.07 },
+        { scale: 1.06 },
         {
-          clipPath: "inset(0 0 0% 0)",
           scale: 1,
           duration: 0.7,
-          ease: "power3.inOut",
-          clearProps: "clipPath,transform",
+          ease: "power3.out",
+          clearProps: "transform",
         },
       );
-    }
   }
-  buttons.forEach((button, index) => {
-    button.addEventListener("click", () => select(index), {
-      signal: controller.signal,
-    });
-    button.addEventListener("pointerenter", () => warm(index), {
-      signal: controller.signal,
-    });
-    button.addEventListener("focus", () => warm(index), {
-      signal: controller.signal,
-    });
+  buttons.forEach((button, i) => {
+    button.hidden = false;
+    button.addEventListener("click", () => select(i), opts);
     button.addEventListener(
       "keydown",
       (event) => {
         if (!["ArrowUp", "ArrowDown", "Home", "End"].includes(event.key))
           return;
         event.preventDefault();
-        const target =
+        const next =
           event.key === "Home"
             ? 0
             : event.key === "End"
               ? buttons.length - 1
-              : (index +
-                  (event.key === "ArrowDown" ? 1 : -1) +
-                  buttons.length) %
+              : (i + (event.key === "ArrowDown" ? 1 : -1) + buttons.length) %
                 buttons.length;
-        buttons[target].focus();
-        select(target);
+        buttons[next].focus();
+        select(next);
       },
-      { signal: controller.signal },
+      opts,
     );
   });
-  const observer = new IntersectionObserver(
-    (entries) => {
-      if (entries[0].isIntersecting) {
-        PLACES.forEach((_, i) => warm(i));
-        observer.disconnect();
-      }
-    },
-    { rootMargin: "300px" },
-  );
-  observer.observe(wrapper);
   return () => {
-    controller.abort();
-    observer.disconnect();
-    activeTween?.kill();
+    ++revision;
+    events.abort();
+    tween?.kill();
   };
-}
-
-export function initPointer(gsap) {
-  const mm = gsap.matchMedia();
-  mm.add(
-    "(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)",
-    () => {
-      const controller = new AbortController();
-      const options = { signal: controller.signal };
-      const pointer = document.querySelector(".pointer");
-      const moveX = gsap.quickTo(pointer, "x", {
-        duration: 0.3,
-        ease: "power3",
-      });
-      const moveY = gsap.quickTo(pointer, "y", {
-        duration: 0.3,
-        ease: "power3",
-      });
-      let visible = false;
-      const show = (value) => {
-        if (visible === value) return;
-        visible = value;
-        gsap.to(pointer, {
-          opacity: value ? 1 : 0,
-          scale: value ? 1 : 0.7,
-          duration: 0.2,
-          overwrite: true,
-        });
-      };
-      document
-        .querySelectorAll(".street-photo,.place-image-wrap")
-        .forEach((target) => {
-          target.addEventListener(
-            "pointerenter",
-            (event) => {
-              gsap.set(pointer, {
-                x: event.clientX - 31,
-                y: event.clientY - 31,
-              });
-              show(true);
-            },
-            options,
-          );
-          target.addEventListener(
-            "pointermove",
-            (event) => {
-              moveX(event.clientX - 31);
-              moveY(event.clientY - 31);
-            },
-            options,
-          );
-          target.addEventListener("pointerleave", () => show(false), options);
-        });
-      document.querySelectorAll("[data-magnetic]").forEach((target) => {
-        const x = gsap.quickTo(target, "x", { duration: 0.4, ease: "power3" });
-        const y = gsap.quickTo(target, "y", { duration: 0.4, ease: "power3" });
-        let box;
-        target.addEventListener(
-          "pointerenter",
-          () => {
-            box = target.getBoundingClientRect();
-          },
-          options,
-        );
-        target.addEventListener(
-          "pointermove",
-          (event) => {
-            if (!box) return;
-            x((event.clientX - box.left - box.width / 2) * 0.12);
-            y((event.clientY - box.top - box.height / 2) * 0.12);
-          },
-          options,
-        );
-        target.addEventListener(
-          "pointerleave",
-          () => {
-            x(0);
-            y(0);
-          },
-          options,
-        );
-      });
-      window.addEventListener("scroll", () => show(false), {
-        ...options,
-        passive: true,
-      });
-      return () => {
-        controller.abort();
-        gsap.set(pointer, { opacity: 0 });
-      };
-    },
-  );
-  return () => mm.revert();
 }

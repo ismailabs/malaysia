@@ -1,0 +1,19 @@
+flowchart TD
+  A[Verify repository, existing deployment, skills] --> B[Baseline screenshots, content and technical audit]
+  B --> C[SEO intent and evidence-based art-direction research]
+  C --> D[Design direction, source rights and page architecture]
+  D --> E[Implement vanilla HTML, CSS, JS, GSAP]
+  E --> F[Static build and offline audits]
+  F --> G{Browser, accessibility, SEO and link gates pass?}
+  G -- No --> E
+  G -- Yes --> H[Cloudflare preview test]
+  H --> I{Preview gates pass?}
+  I -- No --> E
+  I -- Yes --> J[Deploy to production custom hostname]
+  J --> K{Live HTTPS pages and canonical checks pass?}
+  K -- No --> L[Rollback / repair Cloudflare]
+  L --> E
+  K -- Yes --> M[Configure existing Vercel property redirect]
+  M --> N{Legacy 301 or 308 verified?}
+  N -- No --> O[Report actual external blocker or repair]
+  N -- Yes --> P[Final release report, commit and rollback evidence]

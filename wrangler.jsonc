@@ -1,0 +1,27 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "malaysia-between-places",
+  "account_id": "44214a829e2337ca50cf40e4cd827cba",
+  "compatibility_date": "2026-10-19",
+  "workers_dev": false,
+  "preview_urls": false,
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash",
+  },
+  "routes": [{ "pattern": "malaysia.ismailstudio.my", "custom_domain": true }],
+  "env": {
+    "preview": {
+      "name": "malaysia-between-places-preview",
+      "workers_dev": true,
+      "preview_urls": false,
+      "routes": [],
+      "assets": {
+        "directory": "./dist-preview",
+        "not_found_handling": "404-page",
+        "html_handling": "auto-trailing-slash",
+      },
+    },
+  },
+}
