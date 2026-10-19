@@ -38,6 +38,7 @@ try{
      const states=[];for(const progress of [0,.25,.5,.75,1]){
       await page.evaluate(({id,progress})=>{const t=ScrollTrigger.getById(id);window.scrollTo(0,t.start+(t.end-t.start)*progress)},{id,progress});await settle(page);
       states.push(await page.evaluate(id=>{const t=ScrollTrigger.getById(id);return {progress:t.progress,animation:t.animation.progress()}},id));
+      if(id==='map')check(await page.locator('.map-destinations').evaluate(e=>{let opacity=1;for(let n=e;n;n=n.parentElement)opacity*=Number(getComputedStyle(n).opacity);return opacity>.99}),'Map navigation keeps full contrast through the transition');
      }check(states.at(-1).progress>.98&&states[0].progress<.02,`Native scene completes ${id}`);
     }
    }

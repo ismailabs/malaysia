@@ -21,4 +21,13 @@
 /* Keep fixed motion controls clear of reading/focus surfaces in every held act. */
 html{scroll-padding-bottom:90px}
 @media(min-width:701px){.world-note{padding-bottom:90px}.motion-live .world-note{min-height:200px}}
+/* The locator, destination links and title own separate rows at every aspect ratio. */
+.atlas-stage{display:grid;grid-template-rows:90px minmax(164px,1fr) auto auto;gap:10px;padding:0 var(--gutter) 72px;height:100svh;min-height:680px}
+.atlas-geography{position:relative;grid-row:2;top:auto;left:auto;width:76%;height:100%;display:grid;grid-template-rows:minmax(80px,1fr) auto auto;gap:8px}
+.map-art{grid-row:1;min-height:0}.map-art svg{width:100%;height:100%}
+.map-regions{grid-row:2;position:static;top:auto;width:100%}.map-destinations{grid-row:3;position:static;top:auto}
+.atlas-title{grid-row:3;position:relative;bottom:auto;left:auto;pointer-events:none}.atlas h1{font-size:clamp(80px,min(24vw,calc((100svh - 502px)*1.25)),480px)}
+.atlas-bottom{grid-row:4;position:relative;inset:auto;left:auto;right:auto;bottom:auto}
+.atlas-credit{display:block;font-size:13px;line-height:1.5;margin-top:6px}
+@media(max-width:700px){.atlas-stage{grid-template-rows:80px minmax(220px,1fr) auto auto;min-height:700px}.atlas-geography{width:100%;top:auto;left:auto}.map-regions{position:static;top:auto}.map-destinations{position:static;top:auto}.atlas-title{bottom:auto;left:auto}.atlas h1{font-size:23.8vw}.atlas-bottom{bottom:auto;left:auto;right:auto}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}

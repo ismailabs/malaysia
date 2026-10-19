@@ -25,6 +25,13 @@ try {
     child.once("error", reject);
   });
   process.exitCode = code;
+  if (code === 0) {
+    process.exitCode = await new Promise((resolve, reject) => {
+      const child = spawn(process.execPath, ["scripts/verify-v2-history.mjs", `http://127.0.0.1:${port}/`, "verification"], { stdio: "inherit" });
+      child.once("exit", resolve);
+      child.once("error", reject);
+    });
+  }
 } finally {
   server.kill();
 }

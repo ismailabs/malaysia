@@ -15,10 +15,9 @@ export function initMotion(gsap, ScrollTrigger) {
    if(atlas){
     const intro=gsap.timeline({defaults:{ease:'none'},scrollTrigger:{id:'map',trigger:atlas,start:'top top',end:'bottom bottom',scrub:true,invalidateOnRefresh:true}});
     intro.to('.atlas-world',{clipPath:mobile?'ellipse(115% 100% at 50% 50%)':'ellipse(100% 110% at 50% 50%)',duration:1},0)
-     .to('.atlas-geography',{yPercent:-90,scale:.76,autoAlpha:0,duration:.6},.06)
-     .to('.atlas-title',{yPercent:-80,xPercent:mobile?-8:-5,duration:1},0)
-     .to('.atlas-title>p',{autoAlpha:0,duration:.25},.3)
-     .to('.atlas-photo-credit',{yPercent:140,duration:1},0);
+     .to('.atlas-geography',{yPercent:-130,duration:.7},0)
+     .to('.map-art',{autoAlpha:0,duration:.55},.15)
+     .to('.atlas-title',{yPercent:-80,xPercent:mobile?-8:-5,duration:1},0);
    }
    document.querySelectorAll('.world').forEach(world=>{
     const picture=world.querySelector('.world-picture img');
