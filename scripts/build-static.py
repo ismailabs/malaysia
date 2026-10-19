@@ -62,7 +62,7 @@ def main():
 
     def copy_public(src, relative):
         nonlocal copied
-        if relative.as_posix().startswith('assets/scenes/') or relative.as_posix() in {'assets/images/sources.json','js/motion.js','js/interactions.js'}:
+        if relative.name.upper().startswith('README') or relative.as_posix().startswith('assets/scenes/') or relative.as_posix() in {'assets/images/sources.json','js/motion.js','js/interactions.js'}:
             return
         if src.is_symlink():
             fatal(f'Refusing symlink public asset: {src}')
