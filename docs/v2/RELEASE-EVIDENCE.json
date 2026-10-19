@@ -1,0 +1,198 @@
+{
+  "state": "COMPLETE",
+  "verifiedAt": "2026-10-19T20:04:22.694329+00:00",
+  "url": "https://malaysia.ismailstudio.my/",
+  "deployedSourceCommit": "c7e3e3aed5bdba15946419ee960b700a0aa205ce",
+  "documentationCommit": "The commit containing this receipt; public bytes unchanged from deployedSourceCommit.",
+  "production": {
+    "deployment": {
+      "id": "bc62dd9f-0665-4438-a44d-bb6b980ea8e4",
+      "source": "wrangler",
+      "strategy": "percentage",
+      "annotations": {
+        "workers/message": "Malaysia V2 production source c7e3e3aed5bdba15946419ee960b700a0aa205ce",
+        "workers/triggered_by": "deployment"
+      },
+      "versions": [
+        {
+          "version_id": "e3cc346b-7025-49f8-ade5-372c438ddf91",
+          "percentage": 100
+        }
+      ],
+      "created_on": "2026-10-19T19:51:20.801879Z"
+    },
+    "domain": {
+      "id": "2526c6941b0d5dec94f1cfd53da68646a301b8e8",
+      "zone_id": "dc2bee92d5853929394633d0a4165093",
+      "zone_name": "ismailstudio.my",
+      "hostname": "malaysia.ismailstudio.my",
+      "service": "malaysia-between-places",
+      "environment": "production",
+      "cert_id": "b5a19534-230d-4b8e-9b39-8ee53e16632f",
+      "previews_enabled": false,
+      "enabled": true
+    },
+    "certificate": {
+      "authorized": true,
+      "subject": {
+        "CN": "ismailstudio.my"
+      },
+      "issuer": {
+        "C": "US",
+        "O": "Google Trust Services",
+        "CN": "WE1"
+      },
+      "validFrom": "Oct 19 11:07:36 2026 GMT",
+      "validTo": "Jan 17 12:07:33 2027 GMT",
+      "subjectAltName": "DNS:ismailstudio.my, DNS:malaysia.ismailstudio.my, DNS:*.malaysia.ismailstudio.my"
+    },
+    "matchingAssets": 50,
+    "private404s": 9,
+    "indexable": true
+  },
+  "preview": {
+    "url": "https://malaysia-between-places-preview.mohamad-ismail-mohd-izwan.workers.dev/",
+    "version": "db34f893-68f2-47d5-9ea6-da8c870617fd",
+    "matchingAssets": 50,
+    "noindex": true,
+    "passed": 40,
+    "assertions": 590
+  },
+  "tests": {
+    "fullLocal": {
+      "source": "4cba74e5398483b596af33ffa0c204385938d467",
+      "passed": 65,
+      "assertions": 974,
+      "unavailable": [
+        {
+          "name": "Firefox",
+          "status": "unavailable",
+          "reason": "Error: browserType.launch: spawn UNKNOWN\nCall log:\n\u001b[2m  - <launching> C:\\Users\\moham\\AppData\\Local\\ms-playwright\\firefox-1555\\firefox\\firefox.exe -no-remote -headless -profile C:\\Users\\moham\\AppData\\Local\\Temp\\playwright_firefoxdev_profile-9IN1OT -juggler-pipe -silent\u001b[22m\n"
+        }
+      ]
+    },
+    "finalProduction": {
+      "source": "c7e3e3aed5bdba15946419ee960b700a0aa205ce",
+      "passed": 40,
+      "assertions": 590,
+      "failures": [],
+      "externalRequests": []
+    },
+    "axeReports": 12,
+    "axeViolations": 0,
+    "historyJourneys": 28,
+    "controlClearanceStates": 48,
+    "redirectCases": 14,
+    "legacyFragments": 8,
+    "actualStudioVisits": 5
+  },
+  "performance": {
+    "baseline": [
+      {
+        "mode": "mobile",
+        "url": "https://malaysia.ismailstudio.my/",
+        "fetchTime": "2026-10-19T15:03:31.680Z",
+        "scores": {
+          "performance": 53,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "lcp": 6561.603999999999,
+        "cls": 0,
+        "tbt": 300,
+        "bytes": 865340
+      },
+      {
+        "mode": "desktop",
+        "url": "https://malaysia.ismailstudio.my/",
+        "fetchTime": "2026-10-19T15:03:56.450Z",
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "lcp": 725.9345,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 1450967
+      }
+    ],
+    "production": [
+      {
+        "mode": "mobile",
+        "url": "https://malaysia.ismailstudio.my/",
+        "fetchTime": "2026-10-19T20:01:07.581Z",
+        "scores": {
+          "performance": 84,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "lcp": 2868.48,
+        "cls": 0,
+        "tbt": 381,
+        "bytes": 894876
+      },
+      {
+        "mode": "desktop",
+        "url": "https://malaysia.ismailstudio.my/",
+        "fetchTime": "2026-10-19T20:01:38.411Z",
+        "scores": {
+          "performance": 99,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "lcp": 709.948,
+        "cls": 0,
+        "tbt": 47.5,
+        "bytes": 1422235
+      }
+    ],
+    "kind": "Same host/machine Lighthouse mobile and desktop presets; lab observations, not field CWV or physical device FPS."
+  },
+  "artifact": {
+    "files": 51,
+    "bytes": 5153236,
+    "secretScan": "Custom named patterns on staged changes, not Gitleaks; zero findings."
+  },
+  "rollback": {
+    "tag": "malaysia-v1-before-v2-20261019",
+    "source": "8f1643370ea1bfe532d1c36a390bad6ec56b8c02",
+    "workerVersion": "30b9eaad-a6d5-441e-b375-a5ad2afa669a"
+  },
+  "safeguards": {
+    "stack": "Vanilla semantic HTML/CSS, modular browser JS, local GSAP/ScrollTrigger",
+    "additionalPurchases": 0,
+    "newPaidPlans": 0,
+    "newPaidServices": 0,
+    "newPaidAssets": 0,
+    "analytics": "No collection; GA4 pending approved property/consent and DebugView evidence",
+    "legacyVercelDeployment": "dpl_ACHLBW3aEmdjuse2k2oXy3dYkNQW unchanged",
+    "ownerChanges": "Original AGENTS.md edit and codex-handoff deletions remain outside delivery commits"
+  },
+  "limitations": [
+    "Firefox could not launch: spawn UNKNOWN.",
+    "No physical-device, screen-reader or field Core Web Vitals evidence.",
+    "No GA4 conversion, ranking, Search Console ownership or independent award claim.",
+    "Temporary AccessLint browser profile cleanup blocked by automatic approval review; left in place."
+  ],
+  "proof": {
+    "comparison": "output/v2/compare.html",
+    "visualReview": "output/v2/visual-review.md",
+    "refinements": "output/v2/refinement-rounds.md",
+    "prototypes": "output/v2/prototypes/browser-results.json",
+    "fullLocal": "output/v2/release/verification/browser-tests.json",
+    "production": "output/v2/release/delivered/browser-tests.json",
+    "history": "output/v2/release/destination-history-delivered.json",
+    "clearance": "output/v2/release/clearance-delivered.json",
+    "hosted": "output/production-hosted-verification.json",
+    "redirects": "output/transition-verification.json",
+    "provider": "output/v2/release/final-provider-readback.json",
+    "sceneMotion": "output/v2/final/motion-observations.json",
+    "videoDecodes": "output/v2/final/actual-video-review.json",
+    "performance": "output/v2/delivered/performance/summary.json"
+  }
+}

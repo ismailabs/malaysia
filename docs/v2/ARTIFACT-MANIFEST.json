@@ -1,0 +1,264 @@
+{
+  "files": [
+    {
+      "path": "404.html",
+      "bytes": 5560,
+      "sha256": "4da1c4b690097eb5204edc6f13c7739490227056c27258f067a8e47ca123a95f"
+    },
+    {
+      "path": "_headers",
+      "bytes": 495,
+      "sha256": "64df102507cf3f963951b9dfed3e53288348017f63d3937a7f048a84bf568f5f"
+    },
+    {
+      "path": "assets/fonts/barlow-condensed.woff2",
+      "bytes": 22308,
+      "sha256": "215a93c696f442034a46fbb382958f753fda60e30490683aeea6b235fcbb2b66"
+    },
+    {
+      "path": "assets/fonts/barlowcondensed-OFL.txt",
+      "bytes": 4377,
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    },
+    {
+      "path": "assets/fonts/instrument-serif-italic.woff2",
+      "bytes": 22128,
+      "sha256": "5a51946dfffa82972bc98745359c46761515641fda557c25116459a9f83da4a7"
+    },
+    {
+      "path": "assets/fonts/instrumentserif-OFL.txt",
+      "bytes": 4405,
+      "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521"
+    },
+    {
+      "path": "assets/fonts/manrope-OFL.txt",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    {
+      "path": "assets/fonts/manrope.woff2",
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    },
+    {
+      "path": "assets/icons/favicon.svg",
+      "bytes": 228,
+      "sha256": "77b0371cd291085f89bcdda7e3275313cee9d7531fa7adc821ab13479ab51f8f"
+    },
+    {
+      "path": "assets/icons/malaysia-map.svg",
+      "bytes": 7295,
+      "sha256": "13e37d4e31295b5fa352ce4f3fcbb650be884d8de84cb2b3f448b1676bc6abd7"
+    },
+    {
+      "path": "assets/icons/mark.svg",
+      "bytes": 232,
+      "sha256": "8ae5855bc40ad3bea1f9bd9fbc1287a4094d3c353a5a0557ba9f5922a572f517"
+    },
+    {
+      "path": "assets/images/george-town-1200.webp",
+      "bytes": 103968,
+      "sha256": "996596821ec14dfc57ab943629d669a73aa87278c26d0fae7180f180721504d7"
+    },
+    {
+      "path": "assets/images/george-town-2000.webp",
+      "bytes": 227298,
+      "sha256": "05c7f2f8d81853b2535e580619c1cf32a699af1ab2de9370ee9146f3a19264e5"
+    },
+    {
+      "path": "assets/images/george-town-640.webp",
+      "bytes": 38792,
+      "sha256": "9ec5fe94a0301127154a5050fb5d0b80add3c0aadac7cad0b25fc6a253086017"
+    },
+    {
+      "path": "assets/images/kinabalu-1200.webp",
+      "bytes": 77430,
+      "sha256": "b49fa724bc0f8c060c36412af938a60e6da401a77cd26ccb8f8e4a4e6fe2abfc"
+    },
+    {
+      "path": "assets/images/kinabalu-2000.webp",
+      "bytes": 206080,
+      "sha256": "beb7b9f88fdcbf248430be00b0e05e5d4ae1bf29f0660124b2210919728544b7"
+    },
+    {
+      "path": "assets/images/kinabalu-640.webp",
+      "bytes": 22326,
+      "sha256": "b1954be716da421b7fa2fea5b0e75399367383c406786c65797fd7935e9f34de"
+    },
+    {
+      "path": "assets/images/kuala-lumpur-1200.webp",
+      "bytes": 150396,
+      "sha256": "c71f064cc71185179c244f6601fa68ca342bd27bf8683025532adcc81be5fecb"
+    },
+    {
+      "path": "assets/images/kuala-lumpur-2000.webp",
+      "bytes": 335088,
+      "sha256": "5011655b3c82e4a319f45d01ab41894f7c9141d2a28c5e3c985503648a190640"
+    },
+    {
+      "path": "assets/images/kuala-lumpur-640.webp",
+      "bytes": 50448,
+      "sha256": "17c90a29455bc23e7194eda89d6e8f58849d7f9d80e7fa2356985150a7b95607"
+    },
+    {
+      "path": "assets/images/langkawi-1200.webp",
+      "bytes": 251922,
+      "sha256": "92c8ce1c8752eff088d6f75f424dbd9861f97147914cca834e746528ea66e2f2"
+    },
+    {
+      "path": "assets/images/langkawi-2000.webp",
+      "bytes": 526504,
+      "sha256": "611571e1344729cdb36021356d5de0966b2a4780982be2dd12c9914d708902d2"
+    },
+    {
+      "path": "assets/images/langkawi-640.webp",
+      "bytes": 85236,
+      "sha256": "bbcd5f2590d9079045d850790d6f6421f02430d31861beda41a24a497eae23fd"
+    },
+    {
+      "path": "assets/images/nasi-lemak-1200.webp",
+      "bytes": 73826,
+      "sha256": "8ac0ab16654760e1d798385e76ac5dae10a8942793b69277ba16bf66562be94e"
+    },
+    {
+      "path": "assets/images/nasi-lemak-2000.webp",
+      "bytes": 145032,
+      "sha256": "ac89463398ce08e64ade2c76ea52109b43cd35a626ccb0f241bbe2377e5b95f8"
+    },
+    {
+      "path": "assets/images/nasi-lemak-640.webp",
+      "bytes": 31022,
+      "sha256": "42c7820937d90ddf9f27313cd8468523d8c498c0b7a63eb40742fa3a7b1f5691"
+    },
+    {
+      "path": "assets/images/petaling-street-1200.webp",
+      "bytes": 181602,
+      "sha256": "1d5d0e94ef28ea6470c6bbd68760a7e8a4ab31720e35f7016d9e01620511e679"
+    },
+    {
+      "path": "assets/images/petaling-street-2000.webp",
+      "bytes": 373732,
+      "sha256": "c1088c310cbf34e03ce144c86bb4a8422d8739b4bdd443810a9cdbfde4ff0c09"
+    },
+    {
+      "path": "assets/images/petaling-street-640.webp",
+      "bytes": 69960,
+      "sha256": "46e71a1f74eaa2ffe1659509b5df08a146ea08524fb27e8a01030b72280749f7"
+    },
+    {
+      "path": "assets/images/rainforest-1200.webp",
+      "bytes": 344458,
+      "sha256": "66b1dcbc5cc2194397242049090dfe3b808fcf97c53a3c306fc640f15551a0d1"
+    },
+    {
+      "path": "assets/images/rainforest-2000.webp",
+      "bytes": 820952,
+      "sha256": "99fb3679a23c2678fcbc6ede9790065bd8c79fb6fc73dd59a486a41a2eda4fab"
+    },
+    {
+      "path": "assets/images/rainforest-640.webp",
+      "bytes": 105966,
+      "sha256": "06a7d9a9b9be327158339dfaad393c548a6c6df49580467d51dbb58b243c0fca"
+    },
+    {
+      "path": "assets/images/social.jpg",
+      "bytes": 185152,
+      "sha256": "5f1c03bcc699df0e97320884c5c8a4460a44a8a5befb29d30dca8abf31404237"
+    },
+    {
+      "path": "assets/vendor/gsap.min.js",
+      "bytes": 72927,
+      "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+    },
+    {
+      "path": "assets/vendor/ScrollTrigger.min.js",
+      "bytes": 44575,
+      "sha256": "b0b14d67b55b0c43c756ac0b106cfcb09d0879945f6ead64451065b0672916a2"
+    },
+    {
+      "path": "built-by-ismail.png",
+      "bytes": 406036,
+      "sha256": "226fa7f388c5a3f03344bf1d28232f02c2e885ca3da05baa94ad2a499dbea371"
+    },
+    {
+      "path": "credits/index.html",
+      "bytes": 13523,
+      "sha256": "b22ebb578d6be6b460792e0be62e4db863da2e94d49778371e0687596f159926"
+    },
+    {
+      "path": "css/main.css",
+      "bytes": 29,
+      "sha256": "0cb876a7a5aa44507ca438518e1bf4841464612dda8095fd0b0ea6fbfa59fc5b"
+    },
+    {
+      "path": "css/v2.css",
+      "bytes": 27195,
+      "sha256": "bd721502a0130a0f1af515616b7559abf92e950812226a343c5837d02e1c352a"
+    },
+    {
+      "path": "destinations/george-town/index.html",
+      "bytes": 12324,
+      "sha256": "5e371c8c2009b3724ef5ca33e047e962d888da58751a53372dd3234724d36d52"
+    },
+    {
+      "path": "destinations/kuala-lumpur/index.html",
+      "bytes": 12835,
+      "sha256": "2afa03cc722dc66abb4d9d30ca28081605fa1674129f7f1858a3730da8e8600a"
+    },
+    {
+      "path": "destinations/langkawi/index.html",
+      "bytes": 11858,
+      "sha256": "67a3d53b8ed29c84d603963f4b7710a931cb3696d0a0e56a9578acc18a465681"
+    },
+    {
+      "path": "destinations/sabah/index.html",
+      "bytes": 12645,
+      "sha256": "ef8029c1b85fabd5a2c5891c244a97d5522f6cf2623c0efab38113069a13c480"
+    },
+    {
+      "path": "index.html",
+      "bytes": 22888,
+      "sha256": "ed1e6329ecb956cf3ebd16e8786a80c519ac75c25fc2048ce3e056b1e10391f6"
+    },
+    {
+      "path": "js/analytics.js",
+      "bytes": 959,
+      "sha256": "ce1f0397f9e8e81604ca0b71f41379b466602960c85fe9c265d79f30cd101477"
+    },
+    {
+      "path": "js/destination-acts.js",
+      "bytes": 2895,
+      "sha256": "0efe6acd66acf0c2310649d8935152802336e095f2d37bfdd11c65d7040fd0d4"
+    },
+    {
+      "path": "js/main.js",
+      "bytes": 1287,
+      "sha256": "6bbf0c3bfff937123f8a259b9cd78800b87c39a4bd940c37949f1de8f08738cd"
+    },
+    {
+      "path": "js/navigation.js",
+      "bytes": 2916,
+      "sha256": "571afbeae8327dd0ffdaeb9a356f6307ce50a966d64ac8a1db162d9d09789d6f"
+    },
+    {
+      "path": "js/v2-motion.js",
+      "bytes": 4268,
+      "sha256": "25d39bbbf37c2232428c8363780c9c5b6f1c123bc4b30860bc2c86d7a038ee63"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 77,
+      "sha256": "88a62156c81dbb474024caaf3e95b0a315b16060080921e9c28ab9a36794bb70"
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 558,
+      "sha256": "12c416c9b176949a68c135e38243543de72fd0e91db002159665eb24487ba0fb"
+    }
+  ],
+  "count": 51,
+  "totalBytes": 5153236,
+  "stagedTextScan": "custom patterns; not Gitleaks",
+  "stagedPaths": 5,
+  "secretFindings": []
+}
