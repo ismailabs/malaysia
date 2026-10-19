@@ -1,0 +1,50 @@
+{
+  "state": "PENDING_NOT_TESTED",
+  "repo_baseline_commit": "",
+  "repo_v2_commit": "",
+  "winner": "",
+  "prototypes": {
+    "a": {
+      "entry": "output/v2/prototypes/a/index.html",
+      "desktop": "output/v2/prototypes/a/desktop.png",
+      "mobile": "output/v2/prototypes/a/mobile.png",
+      "motion": "output/v2/prototypes/a/motion.webm"
+    },
+    "b": {
+      "entry": "output/v2/prototypes/b/index.html",
+      "desktop": "output/v2/prototypes/b/desktop.png",
+      "mobile": "output/v2/prototypes/b/mobile.png",
+      "motion": "output/v2/prototypes/b/motion.webm"
+    }
+  },
+  "baseline": {
+    "desktop": "output/v2/baseline/desktop.png",
+    "mobile": "output/v2/baseline/mobile.png",
+    "gallery": "output/v2/baseline/gallery.png",
+    "studio": "output/v2/baseline/studio.png"
+  },
+  "final": {
+    "desktop": "output/v2/final/desktop.png",
+    "mobile": "output/v2/final/mobile.png",
+    "gallery": "output/v2/final/gallery.png",
+    "studio": "output/v2/final/studio.png",
+    "map_middle": "output/v2/final/map-middle.png",
+    "gallery_motion": "output/v2/final/gallery-motion.webm",
+    "studio_motion": "output/v2/final/studio-motion.webm",
+    "reduced_mobile": "output/v2/final/reduced-mobile.png",
+    "destinations": {
+      "kuala-lumpur": "output/v2/final/kuala-lumpur.png",
+      "george-town": "output/v2/final/george-town.png",
+      "langkawi": "output/v2/final/langkawi.png",
+      "sabah": "output/v2/final/sabah.png"
+    }
+  },
+  "reports": {
+    "prototype_decision": "output/v2/prototypes/DECISION.md",
+    "visual_review": "output/v2/visual-review.md",
+    "refinement_rounds": "output/v2/refinement-rounds.md",
+    "browser_tests": "output/v2/browser-tests.json",
+    "seo_tests": "output/v2/seo-tests.json",
+    "asset_register": "output/v2/ASSET-REGISTER.md"
+  }
+}

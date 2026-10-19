@@ -1,0 +1,191 @@
+{
+  "schema_version": 2,
+  "title": "Malaysia — Between Places V2 Codex Desktop cinematic redesign handoff",
+  "created_on": "2026-10-19",
+  "origin_repo": "https://github.com/ismailabs/malaysia",
+  "public_v1_source_sha": "875b293b9638f665d499955f80d44c8d78c060e8",
+  "production_domain": "https://malaysia.ismailstudio.my/",
+  "purpose": "Execution-ready instructions and evidence validation only. Does not include an implemented V2 or release verification.",
+  "files": [
+    {
+      "path": "CODEX-EXECUTE.md",
+      "sha256": "058dd7071185bdbc0eafacb0c27cb19cbad36dc7448c0ff0fa7b35f39cfbe738",
+      "bytes": 6227
+    },
+    {
+      "path": "START-HERE.md",
+      "sha256": "94ae6079537817e3529f77e92a587c6913e10d7f6179434bd91de3387963ce26",
+      "bytes": 4229
+    },
+    {
+      "path": "engineering/ARCHITECTURE-AND-MOTION.md",
+      "sha256": "af1865c3262ade8014945c5ae54eb37248ffa078ec62fe12dc0f59dac2517ab7",
+      "bytes": 3389
+    },
+    {
+      "path": "engineering/IMPLEMENTATION-PLAN.md",
+      "sha256": "63e3ccaa944e6ae91ed51db9adb2742c052355161c1f6e4e8c125787ac5c5e58",
+      "bytes": 2787
+    },
+    {
+      "path": "engineering/SKILL-ORCHESTRATION.md",
+      "sha256": "82b8d9f4b533455e3f35bbdfd56a95f2e1e351be12cf60c998654d6f4ac6eb8b",
+      "bytes": 2911
+    },
+    {
+      "path": "experience/ASSET-SOURCING.md",
+      "sha256": "c4affe5b1386340bc8bdab24bb9890dc12c552e8f7dbfdd49b741f379783c4bd",
+      "bytes": 2652
+    },
+    {
+      "path": "experience/CREATIVE-DIRECTION.md",
+      "sha256": "e4a47f98fc1b7191c59c80d897e38f2a08137a3c54438a1d1d9107143d9fba80",
+      "bytes": 3148
+    },
+    {
+      "path": "experience/DESTINATION-IDENTITIES.md",
+      "sha256": "2b1f7fb93ec498b528f7988038f405aaab5b8a598aed4963470f510599a1018b",
+      "bytes": 1884
+    },
+    {
+      "path": "experience/PROTOTYPE-CHALLENGE.md",
+      "sha256": "cf9980eece1ba6000d18b9e1b9ac70b5933875ca01cb2bebc977c87ae9e08eb9",
+      "bytes": 3299
+    },
+    {
+      "path": "experience/SIGNATURE-SCENES.md",
+      "sha256": "cf1f957ebc90f0e7ebd53177f8b40038d12291137354acb6ff0d9b3fdf4287ff",
+      "bytes": 3926
+    },
+    {
+      "path": "growth/CRO-AND-MEASUREMENT.md",
+      "sha256": "32c806c56ac116ab07e2910dcedc4b36e47de90f68be7a38cf9f4cdc60d89b5f",
+      "bytes": 2119
+    },
+    {
+      "path": "growth/SEO-AND-CONTENT.md",
+      "sha256": "8fbc5c09d9c789fbc18b78c55b11aedafd07afbb98f898cafb25213219edde47",
+      "bytes": 2338
+    },
+    {
+      "path": "quality/DEFINITION-OF-DONE.md",
+      "sha256": "972b07ff12f63b02216a3cf94846a64c12e76c19e9db962f7f9c1205a38d7580",
+      "bytes": 3007
+    },
+    {
+      "path": "quality/TEST-MATRIX.md",
+      "sha256": "7c0618db2b18e04c5fce78b41e5dda25bb0905cf089c28c23b59311d7ee4a122",
+      "bytes": 3422
+    },
+    {
+      "path": "quality/VISUAL-TRANSFORMATION-GATE.md",
+      "sha256": "0d97584446c74e5252ba5321a9ec84e784de84003da50f4d4f5297854224c0fc",
+      "bytes": 3865
+    },
+    {
+      "path": "reference/SOURCE-OF-TRUTH.md",
+      "sha256": "fdad7e1624bcb90ca8273debc83305aff80950adc7c29ab007bd2732cd75d2a8",
+      "bytes": 1756
+    },
+    {
+      "path": "reference/V1-BASELINE.md",
+      "sha256": "4c9949ffe9a109a87adc98db440e6a3b867e34700cdbd7daebd41dbd1b11f6f1",
+      "bytes": 3510
+    },
+    {
+      "path": "reference/WORKFLOW.mmd",
+      "sha256": "74e3abbf9f6749e22ae266a95bbff429d2bb80be585bb17734b2d59e1b3cec43",
+      "bytes": 924
+    },
+    {
+      "path": "release/CLOUDFLARE-V2.md",
+      "sha256": "b844fd7363c9059fc30df18cfa94ec80877b17d97c6fa0bfaae54eaa77954c24",
+      "bytes": 4517
+    },
+    {
+      "path": "release/FINAL-REPORT.md",
+      "sha256": "de98d0f385fada1253333cab5bea9f75a99c52df0cecac6216fd806e352a5a14",
+      "bytes": 1606
+    },
+    {
+      "path": "release/VERCEL-LEGACY-AND-ROLLBACK.md",
+      "sha256": "507c65cdcc21c588f414a6678f109a2105b330c2f4abe9133c55a28718712461",
+      "bytes": 1666
+    },
+    {
+      "path": "scripts/activate_v2.py",
+      "sha256": "d098bc7cf15469584b23058bdf86b0f8af3d9d83892d5ebe2aabc85e5733cb47",
+      "bytes": 3858
+    },
+    {
+      "path": "scripts/audit_staging.py",
+      "sha256": "df8d6926be50243510a4630be53ac629a6593f3cc3a42d0af8e4ae3915b63806",
+      "bytes": 1556
+    },
+    {
+      "path": "scripts/capture_v1_baseline.mjs",
+      "sha256": "1cf759763a970a01578c93c3a20aa2d48a271b72fd023775bd83379f20ab2519",
+      "bytes": 2877
+    },
+    {
+      "path": "scripts/check_package.py",
+      "sha256": "d982298abaa9a077b1a119a48356d3924772494afc7e6c5c46dbde7cb5741f20",
+      "bytes": 1305
+    },
+    {
+      "path": "scripts/check_visual_gate.py",
+      "sha256": "94d8c8200f511ff1f493fc3e9e16b35768e3be31e32175de651eaceab085c6d7",
+      "bytes": 5255
+    },
+    {
+      "path": "scripts/render_comparison_board.py",
+      "sha256": "bded0301d3282daf8f8fee36ac95968cafc946d67980fc2dc3e36d3194ff0e24",
+      "bytes": 3121
+    },
+    {
+      "path": "strategy/APPROVED-DECISIONS.md",
+      "sha256": "c2c532e97c76e0c4e1342dbe0a896e1190922fa38128fdaf57209f7f58f00707",
+      "bytes": 5664
+    },
+    {
+      "path": "strategy/V2-SUCCESS-CONTRACT.md",
+      "sha256": "2c3b0a771927ae845771e174c2d81b019d5cf0eca94ef2561fa7ee0126a13b4c",
+      "bytes": 2095
+    },
+    {
+      "path": "templates/ASSET-REGISTER.md",
+      "sha256": "440208407f9ca7e48271f0643a0d6e9a4d64dbd87ede0cd5035050047f3255de",
+      "bytes": 698
+    },
+    {
+      "path": "templates/EVIDENCE-EXAMPLE.json",
+      "sha256": "c0ffdcf149c9e2a4ef966763b45427af3b827729f0eacb0e1278755d8e221189",
+      "bytes": 1809
+    },
+    {
+      "path": "templates/PROGRESS-TRACKER.md",
+      "sha256": "5a6fcba8c6b629201809336ab7b3e6f7d56ba0a6a432e74f5ae128c269126a27",
+      "bytes": 823
+    },
+    {
+      "path": "templates/PROTOTYPE-DECISION.md",
+      "sha256": "d3eeb97e7a48b5f34842213b8d0a648537702c6a17f7a869b7c97229c175550a",
+      "bytes": 1294
+    },
+    {
+      "path": "templates/REFINEMENT-ROUNDS.md",
+      "sha256": "2b60413a46a4dfe607785cc35a8f68ef06fc73bd1e09d57b6f6c492e9ecb411c",
+      "bytes": 704
+    },
+    {
+      "path": "templates/RELEASE-CHECKLIST.md",
+      "sha256": "adde0ed0d69bcafdae4ecacc3cedf643bd24a2b827a22174e5f3c9dabc13e6dc",
+      "bytes": 1360
+    },
+    {
+      "path": "templates/SCENE-OBSERVATIONS.md",
+      "sha256": "20267c4746e18d002fedf5baea86cf0debc67c8b83ccb0a204294dc2824b3820",
+      "bytes": 779
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "site_directories": [
+    "assets",
+    "css",
+    "js",
+    "destinations",
+    "credits"
+  ],
+  "site_root_files": [
+    "index.html",
+    "404.html",
+    "robots.txt",
+    "sitemap.xml",
+    "favicon.ico",
+    "manifest.webmanifest",
+    "site.webmanifest",
+    "_headers",
+    "_redirects",
+    "apple-touch-icon.png",
+    "social.jpg",
+    "built-by-ismail.png"
+  ],
+  "allowed_public_extensions": [
+    ".html",
+    ".htm",
+    ".css",
+    ".js",
+    ".json",
+    ".webmanifest",
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".webp",
+    ".avif",
+    ".gif",
+    ".svg",
+    ".woff",
+    ".woff2",
+    ".ttf",
+    ".otf",
+    ".ico",
+    ".txt",
+    ".xml",
+    ".mp4",
+    ".webm",
+    ".ogg",
+    ".vtt",
+    ".pdf"
+  ]
+}

@@ -15,9 +15,8 @@ try {
     const child = spawn(
       process.execPath,
       [
-        "scripts/verify-browser.mjs",
+        "scripts/verify-v2.mjs",
         `http://127.0.0.1:${port}/`,
-        "--label",
         "verification",
       ],
       { stdio: "inherit" },

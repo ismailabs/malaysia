@@ -3,7 +3,7 @@ from pathlib import Path
 import hashlib,json,re,subprocess
 root=Path(__file__).resolve().parents[1]
 out=root/'dist'
-deny={'.git','.agents','codex-handoff','node_modules','.vercel','.wrangler','scripts','output','package.json','wrangler.jsonc','AGENTS.md'}
+deny={'.git','.agents','codex-handoff','codex-handoff-v2','node_modules','.vercel','.wrangler','scripts','output','package.json','wrangler.jsonc','AGENTS.md'}
 files=[]
 for p in sorted(out.rglob('*')):
     if not p.is_file():continue

@@ -1,18 +1,16 @@
 import { initNavigation } from "./navigation.js";
-import { initGallery, initPlaces } from "./interactions.js";
-import { initMotion } from "./motion.js";
+import { initMotion } from "./v2-motion.js";
+import { initDestinationActs } from "./destination-acts.js";
 import { initAnalytics } from "./analytics.js";
 
 const cleanups = [
   initNavigation(),
-  initGallery(),
-  initPlaces(),
+  initDestinationActs(),
   initAnalytics(),
 ];
 document.documentElement.classList.add("js");
 async function motionReady() {
   if (window.gsap && window.ScrollTrigger) {
-    await import("../assets/scenes/stage.js");
     cleanups.push(initMotion(window.gsap, window.ScrollTrigger));
   }
   window.ScrollTrigger?.refresh();

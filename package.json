@@ -1,12 +1,12 @@
 {
   "name": "malaysia",
   "version": "1.0.0",
-  "description": "Malaysia — Between Places: a vanilla photographic editorial",
+  "description": "Malaysia \u2014 Between Places: a vanilla photographic editorial",
   "scripts": {
     "test": "npm run verify",
     "generate": "py scripts/generate_site.py",
-    "build": "py codex-handoff/scripts/build_static.py --clean",
-    "audit": "py codex-handoff/scripts/audit_static.py --root dist",
+    "build": "npm run generate && py scripts/build-static.py --clean",
+    "audit": "py scripts/audit-static.py --root dist",
     "verify": "npm run build && npm run audit && node scripts/run-verification.mjs",
     "preview": "node scripts/serve.mjs dist 8001"
   },
