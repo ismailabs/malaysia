@@ -1,0 +1,1518 @@
+{
+  "time": "2026-10-19T12:30:47.339Z",
+  "deployedSource": "875b293b9638f665d499955f80d44c8d78c060e8",
+  "artifact": {
+    "count": 54,
+    "totalBytes": 5188792,
+    "files": [
+      {
+        "path": "404.html",
+        "bytes": 6872,
+        "sha256": "4cdf980c4863211c79a7c1ec715b0eb0bdbc9bc91b7a1696c3f78043aa79016d"
+      },
+      {
+        "path": "_headers",
+        "bytes": 487,
+        "sha256": "59c12636f7963c20c1ce2e52e2ce601c3bd60e501e161487c452f2de39c14209"
+      },
+      {
+        "path": "assets/fonts/barlow-condensed.woff2",
+        "bytes": 22308,
+        "sha256": "215a93c696f442034a46fbb382958f753fda60e30490683aeea6b235fcbb2b66"
+      },
+      {
+        "path": "assets/fonts/barlowcondensed-OFL.txt",
+        "bytes": 4377,
+        "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+      },
+      {
+        "path": "assets/fonts/instrument-serif-italic.woff2",
+        "bytes": 22128,
+        "sha256": "5a51946dfffa82972bc98745359c46761515641fda557c25116459a9f83da4a7"
+      },
+      {
+        "path": "assets/fonts/instrumentserif-OFL.txt",
+        "bytes": 4405,
+        "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521"
+      },
+      {
+        "path": "assets/fonts/manrope-OFL.txt",
+        "bytes": 4387,
+        "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+      },
+      {
+        "path": "assets/fonts/manrope.woff2",
+        "bytes": 24836,
+        "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+      },
+      {
+        "path": "assets/icons/favicon.svg",
+        "bytes": 227,
+        "sha256": "2a7c94670f3bddcf3f42f6ea04736540662252c066a2fdbf6015744922c36e32"
+      },
+      {
+        "path": "assets/icons/mark.svg",
+        "bytes": 232,
+        "sha256": "8ae5855bc40ad3bea1f9bd9fbc1287a4094d3c353a5a0557ba9f5922a572f517"
+      },
+      {
+        "path": "assets/images/george-town-1200.webp",
+        "bytes": 103968,
+        "sha256": "996596821ec14dfc57ab943629d669a73aa87278c26d0fae7180f180721504d7"
+      },
+      {
+        "path": "assets/images/george-town-2000.webp",
+        "bytes": 227298,
+        "sha256": "05c7f2f8d81853b2535e580619c1cf32a699af1ab2de9370ee9146f3a19264e5"
+      },
+      {
+        "path": "assets/images/george-town-640.webp",
+        "bytes": 38792,
+        "sha256": "9ec5fe94a0301127154a5050fb5d0b80add3c0aadac7cad0b25fc6a253086017"
+      },
+      {
+        "path": "assets/images/kinabalu-1200.webp",
+        "bytes": 77430,
+        "sha256": "b49fa724bc0f8c060c36412af938a60e6da401a77cd26ccb8f8e4a4e6fe2abfc"
+      },
+      {
+        "path": "assets/images/kinabalu-2000.webp",
+        "bytes": 206080,
+        "sha256": "beb7b9f88fdcbf248430be00b0e05e5d4ae1bf29f0660124b2210919728544b7"
+      },
+      {
+        "path": "assets/images/kinabalu-640.webp",
+        "bytes": 22326,
+        "sha256": "b1954be716da421b7fa2fea5b0e75399367383c406786c65797fd7935e9f34de"
+      },
+      {
+        "path": "assets/images/kuala-lumpur-1200.webp",
+        "bytes": 150396,
+        "sha256": "c71f064cc71185179c244f6601fa68ca342bd27bf8683025532adcc81be5fecb"
+      },
+      {
+        "path": "assets/images/kuala-lumpur-2000.webp",
+        "bytes": 335088,
+        "sha256": "5011655b3c82e4a319f45d01ab41894f7c9141d2a28c5e3c985503648a190640"
+      },
+      {
+        "path": "assets/images/kuala-lumpur-640.webp",
+        "bytes": 50448,
+        "sha256": "17c90a29455bc23e7194eda89d6e8f58849d7f9d80e7fa2356985150a7b95607"
+      },
+      {
+        "path": "assets/images/langkawi-1200.webp",
+        "bytes": 251922,
+        "sha256": "92c8ce1c8752eff088d6f75f424dbd9861f97147914cca834e746528ea66e2f2"
+      },
+      {
+        "path": "assets/images/langkawi-2000.webp",
+        "bytes": 526504,
+        "sha256": "611571e1344729cdb36021356d5de0966b2a4780982be2dd12c9914d708902d2"
+      },
+      {
+        "path": "assets/images/langkawi-640.webp",
+        "bytes": 85236,
+        "sha256": "bbcd5f2590d9079045d850790d6f6421f02430d31861beda41a24a497eae23fd"
+      },
+      {
+        "path": "assets/images/nasi-lemak-1200.webp",
+        "bytes": 73826,
+        "sha256": "8ac0ab16654760e1d798385e76ac5dae10a8942793b69277ba16bf66562be94e"
+      },
+      {
+        "path": "assets/images/nasi-lemak-2000.webp",
+        "bytes": 145032,
+        "sha256": "ac89463398ce08e64ade2c76ea52109b43cd35a626ccb0f241bbe2377e5b95f8"
+      },
+      {
+        "path": "assets/images/nasi-lemak-640.webp",
+        "bytes": 31022,
+        "sha256": "42c7820937d90ddf9f27313cd8468523d8c498c0b7a63eb40742fa3a7b1f5691"
+      },
+      {
+        "path": "assets/images/petaling-street-1200.webp",
+        "bytes": 181602,
+        "sha256": "1d5d0e94ef28ea6470c6bbd68760a7e8a4ab31720e35f7016d9e01620511e679"
+      },
+      {
+        "path": "assets/images/petaling-street-2000.webp",
+        "bytes": 373732,
+        "sha256": "c1088c310cbf34e03ce144c86bb4a8422d8739b4bdd443810a9cdbfde4ff0c09"
+      },
+      {
+        "path": "assets/images/petaling-street-640.webp",
+        "bytes": 69960,
+        "sha256": "46e71a1f74eaa2ffe1659509b5df08a146ea08524fb27e8a01030b72280749f7"
+      },
+      {
+        "path": "assets/images/rainforest-1200.webp",
+        "bytes": 344458,
+        "sha256": "66b1dcbc5cc2194397242049090dfe3b808fcf97c53a3c306fc640f15551a0d1"
+      },
+      {
+        "path": "assets/images/rainforest-2000.webp",
+        "bytes": 820952,
+        "sha256": "99fb3679a23c2678fcbc6ede9790065bd8c79fb6fc73dd59a486a41a2eda4fab"
+      },
+      {
+        "path": "assets/images/rainforest-640.webp",
+        "bytes": 105966,
+        "sha256": "06a7d9a9b9be327158339dfaad393c548a6c6df49580467d51dbb58b243c0fca"
+      },
+      {
+        "path": "assets/images/social.jpg",
+        "bytes": 185152,
+        "sha256": "5f1c03bcc699df0e97320884c5c8a4460a44a8a5befb29d30dca8abf31404237"
+      },
+      {
+        "path": "assets/images/sources.json",
+        "bytes": 2223,
+        "sha256": "d724b9a595f6dc58c730b21f94135171acc613964d43a8f3379bea3e519a08f3"
+      },
+      {
+        "path": "assets/scenes/LICENSE.txt",
+        "bytes": 1065,
+        "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df"
+      },
+      {
+        "path": "assets/scenes/stage.css",
+        "bytes": 1169,
+        "sha256": "018f3ef9c960373519ed7e715be4991739fe50667d3dd48f0a12718c34a166c7"
+      },
+      {
+        "path": "assets/scenes/stage.js",
+        "bytes": 7655,
+        "sha256": "fb95ea271aec7b565d81d85dc9d89c0d7be075f83fa418161e884e88c86b778d"
+      },
+      {
+        "path": "assets/vendor/gsap.min.js",
+        "bytes": 72927,
+        "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+      },
+      {
+        "path": "assets/vendor/README.txt",
+        "bytes": 120,
+        "sha256": "0c595adf417116d45690b555a4134e64abe36ebc12e336b228fa52b77632e27f"
+      },
+      {
+        "path": "assets/vendor/ScrollTrigger.min.js",
+        "bytes": 44575,
+        "sha256": "b0b14d67b55b0c43c756ac0b106cfcb09d0879945f6ead64451065b0672916a2"
+      },
+      {
+        "path": "built-by-ismail.png",
+        "bytes": 406036,
+        "sha256": "226fa7f388c5a3f03344bf1d28232f02c2e885ca3da05baa94ad2a499dbea371"
+      },
+      {
+        "path": "credits/index.html",
+        "bytes": 17432,
+        "sha256": "769a9ce2692f6e2d82b68fe01162c4b249524bbb6c7146523b75d88e07d23811"
+      },
+      {
+        "path": "css/main.css",
+        "bytes": 30689,
+        "sha256": "32e95f1c1f632deb2e01e576f7368a20a9d2ddd09a9df4e53119ef44a3f72e3f"
+      },
+      {
+        "path": "destinations/george-town/index.html",
+        "bytes": 16450,
+        "sha256": "0505c097d404b220433eea665b4d8e6a4269e3a6590e6afb7542145651b5d691"
+      },
+      {
+        "path": "destinations/kuala-lumpur/index.html",
+        "bytes": 16602,
+        "sha256": "1e458aee64e8262a0c5eab61019e662936e8864c42cf51649ae8f1dc3550c8d9"
+      },
+      {
+        "path": "destinations/langkawi/index.html",
+        "bytes": 15655,
+        "sha256": "9b2c6277307fbaf7e7005edf9c6600e0d729540eb776aee0d8bd3a4428bf913b"
+      },
+      {
+        "path": "destinations/sabah/index.html",
+        "bytes": 16114,
+        "sha256": "dd301362f4a47ee1fdfc720c08aa2b41d938bcb9551c27d61f03dbd864342638"
+      },
+      {
+        "path": "index.html",
+        "bytes": 26181,
+        "sha256": "71a138b2f4359eeb2bd623e2bc4283a3f9e9caca72127d55c87c3e095e650d59"
+      },
+      {
+        "path": "js/analytics.js",
+        "bytes": 959,
+        "sha256": "ce1f0397f9e8e81604ca0b71f41379b466602960c85fe9c265d79f30cd101477"
+      },
+      {
+        "path": "js/interactions.js",
+        "bytes": 4978,
+        "sha256": "1e3512efbed47c0599951d9152a2ac4c86d7f15bf21715b62616bb5a67e63c66"
+      },
+      {
+        "path": "js/main.js",
+        "bytes": 1339,
+        "sha256": "d5c77f27732ef9d06b6bba9ccd48675ff97d1d95ff1ef0e43b4bbb65fb6c7868"
+      },
+      {
+        "path": "js/motion.js",
+        "bytes": 5623,
+        "sha256": "09131f9a219dea4613958faf40b8c4cf3860d789c4fed32fba4c1c518c70e44a"
+      },
+      {
+        "path": "js/navigation.js",
+        "bytes": 2916,
+        "sha256": "571afbeae8327dd0ffdaeb9a356f6307ce50a966d64ac8a1db162d9d09789d6f"
+      },
+      {
+        "path": "robots.txt",
+        "bytes": 77,
+        "sha256": "88a62156c81dbb474024caaf3e95b0a315b16060080921e9c28ab9a36794bb70"
+      },
+      {
+        "path": "sitemap.xml",
+        "bytes": 558,
+        "sha256": "12c416c9b176949a68c135e38243543de72fd0e91db002159665eb24487ba0fb"
+      }
+    ]
+  },
+  "browsers": {
+    "local": {
+      "time": "2026-10-19T11:54:18.733Z",
+      "base": "http://127.0.0.1:8001/",
+      "cases": 66,
+      "passed": 65,
+      "assertions": 632,
+      "failures": [],
+      "unavailable": [
+        {
+          "label": "Firefox core journeys",
+          "status": "unavailable",
+          "error": "Error: Firefox runner unavailable: Error: browserType.launch: spawn UNKNOWN\nCall log:\n\u001b[2m  - <launching> C:\\Users\\moham\\AppData\\Local\\ms-playwright\\firefox-1555\\firefox\\firefox.exe -no-remote -headless -profile C:\\Users\\moham\\AppData\\Local\\Temp\\playwright_firefoxdev_profile-MNHVXz -juggler-pipe -silent\u001b[22m\n"
+        }
+      ],
+      "externalRequests": [],
+      "cancelledImages": []
+    },
+    "previewInitial": {
+      "time": "2026-10-19T11:59:34.405Z",
+      "base": "https://malaysia-between-places-preview.mohamad-ismail-mohd-izwan.workers.dev/",
+      "cases": 40,
+      "passed": 39,
+      "assertions": 390,
+      "failures": [
+        {
+          "label": "keyboard menu, gallery, previews, history and private event",
+          "error": "AssertionError [ERR_ASSERTION]: Interaction errors GET https://malaysia-between-places-preview.mohamad-ismail-mohd-izwan.workers.dev/assets/images/kuala-lumpur-1200.webp net::ERR_ABORTED"
+        }
+      ],
+      "unavailable": [],
+      "externalRequests": [],
+      "cancelledImages": []
+    },
+    "previewRetest": {
+      "time": "2026-10-19T12:01:44.719Z",
+      "base": "https://malaysia-between-places-preview.mohamad-ismail-mohd-izwan.workers.dev/",
+      "cases": 1,
+      "passed": 1,
+      "assertions": 26,
+      "failures": [],
+      "unavailable": [],
+      "externalRequests": [],
+      "cancelledImages": [
+        {
+          "url": "https://malaysia-between-places-preview.mohamad-ismail-mohd-izwan.workers.dev/assets/images/kuala-lumpur-1200.webp",
+          "reason": "net::ERR_ABORTED"
+        }
+      ]
+    },
+    "production": {
+      "time": "2026-10-19T12:12:28.768Z",
+      "base": "https://malaysia.ismailstudio.my/",
+      "cases": 40,
+      "passed": 40,
+      "assertions": 390,
+      "failures": [],
+      "unavailable": [],
+      "externalRequests": [],
+      "cancelledImages": [
+        {
+          "url": "https://malaysia.ismailstudio.my/assets/images/kuala-lumpur-1200.webp",
+          "reason": "net::ERR_ABORTED"
+        }
+      ]
+    }
+  },
+  "production": {
+    "time": "2026-10-19T12:11:00.652Z",
+    "origin": "https://malaysia.ismailstudio.my/",
+    "checkedAssets": 53,
+    "hashMatches": 53,
+    "certificate": {
+      "authorized": true,
+      "subject": {
+        "CN": "ismailstudio.my"
+      },
+      "issuer": {
+        "C": "US",
+        "O": "Google Trust Services",
+        "CN": "WE1"
+      },
+      "validFrom": "Oct 19 11:07:36 2026 GMT",
+      "validTo": "Jan 17 12:07:33 2027 GMT",
+      "subjectAltName": "DNS:ismailstudio.my, DNS:malaysia.ismailstudio.my, DNS:*.malaysia.ismailstudio.my"
+    },
+    "privateChecks": [
+      {
+        "path": "/missing-place-qa/",
+        "status": 404
+      },
+      {
+        "path": "/.agents/skills/design-taste-frontend/SKILL.md",
+        "status": 404
+      },
+      {
+        "path": "/codex-handoff/START-HERE.md",
+        "status": 404
+      },
+      {
+        "path": "/AGENTS.md",
+        "status": 404
+      },
+      {
+        "path": "/package.json",
+        "status": 404
+      },
+      {
+        "path": "/wrangler.jsonc",
+        "status": 404
+      },
+      {
+        "path": "/.env",
+        "status": 404
+      },
+      {
+        "path": "/scripts/generate_site.py",
+        "status": 404
+      },
+      {
+        "path": "/_headers",
+        "status": 404
+      }
+    ],
+    "errors": [],
+    "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none'"
+  },
+  "http": {
+    "production": "https://malaysia.ismailstudio.my/",
+    "pages": [
+      {
+        "path": "/",
+        "status": 200,
+        "url": "https://malaysia.ismailstudio.my/",
+        "title": "Malaysia � Between Places | A photographic journey",
+        "canonical": [
+          "https://malaysia.ismailstudio.my/"
+        ]
+      },
+      {
+        "path": "/destinations/kuala-lumpur/",
+        "status": 200,
+        "url": "https://malaysia.ismailstudio.my/destinations/kuala-lumpur/",
+        "title": "Kuala Lumpur � Between Places | Malaysia",
+        "canonical": [
+          "https://malaysia.ismailstudio.my/destinations/kuala-lumpur/"
+        ]
+      },
+      {
+        "path": "/destinations/george-town/",
+        "status": 200,
+        "url": "https://malaysia.ismailstudio.my/destinations/george-town/",
+        "title": "George Town � Between Places | Malaysia",
+        "canonical": [
+          "https://malaysia.ismailstudio.my/destinations/george-town/"
+        ]
+      },
+      {
+        "path": "/destinations/langkawi/",
+        "status": 200,
+        "url": "https://malaysia.ismailstudio.my/destinations/langkawi/",
+        "title": "Langkawi � Between Places | Malaysia",
+        "canonical": [
+          "https://malaysia.ismailstudio.my/destinations/langkawi/"
+        ]
+      },
+      {
+        "path": "/destinations/sabah/",
+        "status": 200,
+        "url": "https://malaysia.ismailstudio.my/destinations/sabah/",
+        "title": "Sabah � Between Places | Malaysia",
+        "canonical": [
+          "https://malaysia.ismailstudio.my/destinations/sabah/"
+        ]
+      },
+      {
+        "path": "/robots.txt",
+        "status": 200,
+        "url": "https://malaysia.ismailstudio.my/robots.txt"
+      },
+      {
+        "path": "/sitemap.xml",
+        "status": 200,
+        "url": "https://malaysia.ismailstudio.my/sitemap.xml"
+      }
+    ],
+    "legacy": {
+      "status": 308,
+      "location": "https://malaysia.ismailstudio.my/"
+    },
+    "passed": true,
+    "unknown_path_status": 404,
+    "errors": []
+  },
+  "transition": {
+    "time": "2026-10-19T12:21:28.372Z",
+    "legacy": "https://malaysia-between-places.vercel.app",
+    "production": "https://malaysia.ismailstudio.my",
+    "passed": true,
+    "checks": [
+      {
+        "path": "/",
+        "firstStatus": 308,
+        "location": "https://malaysia.ismailstudio.my/",
+        "finalStatus": 200
+      },
+      {
+        "path": "/?utm_source=legacy&tag=one&tag=two&q=island%20water",
+        "firstStatus": 308,
+        "location": "https://malaysia.ismailstudio.my/?utm_source=legacy&tag=one&tag=two&q=island%20water",
+        "finalStatus": 200
+      },
+      {
+        "path": "/destinations/kuala-lumpur/",
+        "firstStatus": 308,
+        "location": "https://malaysia.ismailstudio.my/destinations/kuala-lumpur/",
+        "finalStatus": 200
+      },
+      {
+        "path": "/destinations/kuala-lumpur/?utm_source=legacy&tag=one&tag=two&q=island%20water",
+        "firstStatus": 308,
+        "location": "https://malaysia.ismailstudio.my/destinations/kuala-lumpur/?utm_source=legacy&tag=one&tag=two&q=island%20water",
+        "finalStatus": 200
+      },
+      {
+        "path": "/destinations/george-town/",
+        "firstStatus": 308,
+        "location": "https://malaysia.ismailstudio.my/destinations/george-town/",
+        "finalStatus": 200
+      },
+      {
+        "path": "/destinations/george-town/?utm_source=legacy&tag=one&tag=two&q=island%20water",
+        "firstStatus": 308,
+        "location": "https://malaysia.ismailstudio.my/destinations/george-town/?utm_source=legacy&tag=one&tag=two&q=island%20water",
+        "finalStatus": 200
+      },
+      {
+        "path": "/destinations/langkawi/",
+        "firstStatus": 308,
+        "location": "https://malaysia.ismailstudio.my/destinations/langkawi/",
+        "finalStatus": 200
+      },
+      {
+        "path": "/destinations/langkawi/?utm_source=legacy&tag=one&tag=two&q=island%20water",
+        "firstStatus": 308,
+        "location": "https://malaysia.ismailstudio.my/destinations/langkawi/?utm_source=legacy&tag=one&tag=two&q=island%20water",
+        "finalStatus": 200
+      },
+      {
+        "path": "/destinations/sabah/",
+        "firstStatus": 308,
+        "location": "https://malaysia.ismailstudio.my/destinations/sabah/",
+        "finalStatus": 200
+      },
+      {
+        "path": "/destinations/sabah/?utm_source=legacy&tag=one&tag=two&q=island%20water",
+        "firstStatus": 308,
+        "location": "https://malaysia.ismailstudio.my/destinations/sabah/?utm_source=legacy&tag=one&tag=two&q=island%20water",
+        "finalStatus": 200
+      },
+      {
+        "path": "/credits/",
+        "firstStatus": 308,
+        "location": "https://malaysia.ismailstudio.my/credits/",
+        "finalStatus": 200
+      },
+      {
+        "path": "/credits/?utm_source=legacy&tag=one&tag=two&q=island%20water",
+        "firstStatus": 308,
+        "location": "https://malaysia.ismailstudio.my/credits/?utm_source=legacy&tag=one&tag=two&q=island%20water",
+        "finalStatus": 200
+      },
+      {
+        "path": "/missing-place-qa/",
+        "firstStatus": 308,
+        "location": "https://malaysia.ismailstudio.my/missing-place-qa/",
+        "finalStatus": 404
+      },
+      {
+        "path": "/missing-place-qa/?utm_source=legacy&tag=one&tag=two&q=island%20water",
+        "firstStatus": 308,
+        "location": "https://malaysia.ismailstudio.my/missing-place-qa/?utm_source=legacy&tag=one&tag=two&q=island%20water",
+        "finalStatus": 404
+      }
+    ],
+    "fragments": [
+      {
+        "fragment": "home",
+        "url": "https://malaysia.ismailstudio.my/?from=legacy#home",
+        "targetExists": true
+      },
+      {
+        "fragment": "prologue",
+        "url": "https://malaysia.ismailstudio.my/?from=legacy#prologue",
+        "targetExists": true
+      },
+      {
+        "fragment": "field-notes",
+        "url": "https://malaysia.ismailstudio.my/?from=legacy#field-notes",
+        "targetExists": true
+      },
+      {
+        "fragment": "streets",
+        "url": "https://malaysia.ismailstudio.my/?from=legacy#streets",
+        "targetExists": true
+      },
+      {
+        "fragment": "coast",
+        "url": "https://malaysia.ismailstudio.my/?from=legacy#coast",
+        "targetExists": true
+      },
+      {
+        "fragment": "borneo",
+        "url": "https://malaysia.ismailstudio.my/?from=legacy#borneo",
+        "targetExists": true
+      },
+      {
+        "fragment": "ending",
+        "url": "https://malaysia.ismailstudio.my/?from=legacy#ending",
+        "targetExists": true
+      },
+      {
+        "fragment": "about",
+        "url": "https://malaysia.ismailstudio.my/?from=legacy#about",
+        "targetExists": true
+      }
+    ],
+    "visits": [
+      {
+        "source": "/",
+        "targets": [
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "header"
+          },
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "story"
+          },
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "closing"
+          },
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "footer"
+          },
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "signature"
+          }
+        ],
+        "finalUrl": "https://www.ismailstudio.my/",
+        "status": 200,
+        "title": "ISMAIL — Web Developer for Malaysian SMEs"
+      },
+      {
+        "source": "/destinations/kuala-lumpur/",
+        "targets": [
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "header"
+          },
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "destination-closing"
+          },
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "footer"
+          },
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "signature"
+          }
+        ],
+        "finalUrl": "https://www.ismailstudio.my/",
+        "status": 200,
+        "title": "ISMAIL — Web Developer for Malaysian SMEs"
+      },
+      {
+        "source": "/destinations/george-town/",
+        "targets": [
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "header"
+          },
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "destination-closing"
+          },
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "footer"
+          },
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "signature"
+          }
+        ],
+        "finalUrl": "https://www.ismailstudio.my/",
+        "status": 200,
+        "title": "ISMAIL — Web Developer for Malaysian SMEs"
+      },
+      {
+        "source": "/destinations/langkawi/",
+        "targets": [
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "header"
+          },
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "destination-closing"
+          },
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "footer"
+          },
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "signature"
+          }
+        ],
+        "finalUrl": "https://www.ismailstudio.my/",
+        "status": 200,
+        "title": "ISMAIL — Web Developer for Malaysian SMEs"
+      },
+      {
+        "source": "/destinations/sabah/",
+        "targets": [
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "header"
+          },
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "destination-closing"
+          },
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "footer"
+          },
+          {
+            "href": "https://ismailstudio.my/",
+            "placement": "signature"
+          }
+        ],
+        "finalUrl": "https://www.ismailstudio.my/",
+        "status": 200,
+        "title": "ISMAIL — Web Developer for Malaysian SMEs"
+      }
+    ]
+  },
+  "performance": [
+    {
+      "name": "baseline-lighthouse-mobile",
+      "time": "2026-10-19T11:23:15.494Z",
+      "url": "https://malaysia-between-places.vercel.app/",
+      "version": "13.5.0",
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+        "benchmarkIndex": 895.5,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "scores": {
+        "performance": 49,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 4602.598,
+        "cumulative-layout-shift": 0,
+        "total-blocking-time": 1111,
+        "first-contentful-paint": 3850.098,
+        "speed-index": 5232.01086618444
+      },
+      "warnings": [
+        "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+      ]
+    },
+    {
+      "name": "preview-lighthouse-mobile",
+      "time": "2026-10-19T12:04:35.402Z",
+      "url": "https://malaysia-between-places-preview.mohamad-ismail-mohd-izwan.workers.dev/",
+      "version": "13.5.0",
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+        "benchmarkIndex": 1322,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "scores": {
+        "performance": 81,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 69,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 3729.7155000000002,
+        "cumulative-layout-shift": 0,
+        "total-blocking-time": 322,
+        "first-contentful-paint": 1476.7155,
+        "speed-index": 3317.0779288495223
+      },
+      "warnings": []
+    },
+    {
+      "name": "production-lighthouse-mobile",
+      "time": "2026-10-19T12:15:21.972Z",
+      "url": "https://malaysia.ismailstudio.my/",
+      "version": "13.5.0",
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+        "benchmarkIndex": 639,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      },
+      "scores": {
+        "performance": 85,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 3495.3485,
+        "cumulative-layout-shift": 0,
+        "total-blocking-time": 255,
+        "first-contentful-paint": 1594.3485,
+        "speed-index": 3062.458024838321
+      },
+      "warnings": [
+        "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+      ]
+    },
+    {
+      "name": "production-lighthouse-desktop",
+      "time": "2026-10-19T12:15:59.320Z",
+      "url": "https://malaysia.ismailstudio.my/",
+      "version": "13.5.0",
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+        "benchmarkIndex": 407,
+        "credits": {
+          "axe-core": "4.14.0"
+        }
+      },
+      "formFactor": "desktop",
+      "throttlingMethod": "simulate",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1350,
+        "height": 940,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "largest-contentful-paint": 817.0285,
+        "cumulative-layout-shift": 0,
+        "total-blocking-time": 17.5,
+        "first-contentful-paint": 555.0237500000001,
+        "speed-index": 1113.8985785236614
+      },
+      "warnings": []
+    }
+  ],
+  "accessibility": {
+    "accesslint": {
+      "url": "http://127.0.0.1:8001/",
+      "timestamp": 1792410062949,
+      "testEngine": {
+        "name": "accesslint",
+        "version": "0.21.0"
+      },
+      "testEnvironment": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+        "windowWidth": 756,
+        "windowHeight": 488,
+        "orientationAngle": 0,
+        "orientationType": "landscape-primary"
+      },
+      "ruleCount": 94,
+      "skippedRules": [],
+      "violations": []
+    },
+    "axe": [
+      {
+        "file": "axe-1440-_.json",
+        "url": "https://malaysia.ismailstudio.my/",
+        "timestamp": "2026-10-19T12:11:40.919Z",
+        "violations": 0,
+        "passes": 24,
+        "incomplete": 2
+      },
+      {
+        "file": "axe-1440-_credits_.json",
+        "url": "https://malaysia.ismailstudio.my/credits/",
+        "timestamp": "2026-10-19T12:11:56.300Z",
+        "violations": 0,
+        "passes": 20,
+        "incomplete": 2
+      },
+      {
+        "file": "axe-1440-_destinations_george-town_.json",
+        "url": "https://malaysia.ismailstudio.my/destinations/george-town/",
+        "timestamp": "2026-10-19T12:11:48.032Z",
+        "violations": 0,
+        "passes": 22,
+        "incomplete": 2
+      },
+      {
+        "file": "axe-1440-_destinations_kuala-lumpur_.json",
+        "url": "https://malaysia.ismailstudio.my/destinations/kuala-lumpur/",
+        "timestamp": "2026-10-19T12:11:45.085Z",
+        "violations": 0,
+        "passes": 22,
+        "incomplete": 2
+      },
+      {
+        "file": "axe-1440-_destinations_langkawi_.json",
+        "url": "https://malaysia.ismailstudio.my/destinations/langkawi/",
+        "timestamp": "2026-10-19T12:11:51.057Z",
+        "violations": 0,
+        "passes": 22,
+        "incomplete": 2
+      },
+      {
+        "file": "axe-1440-_destinations_sabah_.json",
+        "url": "https://malaysia.ismailstudio.my/destinations/sabah/",
+        "timestamp": "2026-10-19T12:11:53.727Z",
+        "violations": 0,
+        "passes": 22,
+        "incomplete": 2
+      },
+      {
+        "file": "axe-390-_.json",
+        "url": "https://malaysia.ismailstudio.my/",
+        "timestamp": "2026-10-19T12:11:24.310Z",
+        "violations": 0,
+        "passes": 24,
+        "incomplete": 2
+      },
+      {
+        "file": "axe-390-_credits_.json",
+        "url": "https://malaysia.ismailstudio.my/credits/",
+        "timestamp": "2026-10-19T12:11:37.241Z",
+        "violations": 0,
+        "passes": 20,
+        "incomplete": 2
+      },
+      {
+        "file": "axe-390-_destinations_george-town_.json",
+        "url": "https://malaysia.ismailstudio.my/destinations/george-town/",
+        "timestamp": "2026-10-19T12:11:29.749Z",
+        "violations": 0,
+        "passes": 22,
+        "incomplete": 2
+      },
+      {
+        "file": "axe-390-_destinations_kuala-lumpur_.json",
+        "url": "https://malaysia.ismailstudio.my/destinations/kuala-lumpur/",
+        "timestamp": "2026-10-19T12:11:27.206Z",
+        "violations": 0,
+        "passes": 22,
+        "incomplete": 2
+      },
+      {
+        "file": "axe-390-_destinations_langkawi_.json",
+        "url": "https://malaysia.ismailstudio.my/destinations/langkawi/",
+        "timestamp": "2026-10-19T12:11:32.173Z",
+        "violations": 0,
+        "passes": 22,
+        "incomplete": 2
+      },
+      {
+        "file": "axe-390-_destinations_sabah_.json",
+        "url": "https://malaysia.ismailstudio.my/destinations/sabah/",
+        "timestamp": "2026-10-19T12:11:34.617Z",
+        "violations": 0,
+        "passes": 22,
+        "incomplete": 2
+      }
+    ],
+    "limit": "Automated WCAG checks and manual keyboard review; no full screen-reader conformance claim."
+  },
+  "scenes": {
+    "time": "2026-10-19T12:03:05.972Z",
+    "url": "http://127.0.0.1:8001/",
+    "results": [
+      {
+        "label": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "state": {
+          "top": 2900.1875,
+          "height": 1665,
+          "live": true,
+          "rest": false
+        },
+        "frameCount": 13,
+        "errors": []
+      },
+      {
+        "label": "phone",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "state": {
+          "top": 2938.375,
+          "height": 801.640625,
+          "live": false,
+          "rest": true
+        },
+        "frameCount": 13,
+        "errors": []
+      },
+      {
+        "label": "reduced",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "state": {
+          "top": 2900.1875,
+          "height": 861.984375,
+          "live": false,
+          "rest": true
+        },
+        "frameCount": 13,
+        "errors": []
+      }
+    ]
+  },
+  "visual": {
+    "time": "2026-10-19T12:24:20.970Z",
+    "results": [
+      {
+        "mode": "reduce",
+        "label": "hero",
+        "state": {
+          "complete": true,
+          "width": 503,
+          "height": 503,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "clip": "none"
+        },
+        "file": "output/production-visual/reduce-hero.png"
+      },
+      {
+        "mode": "reduce",
+        "label": "coast",
+        "state": {
+          "complete": true,
+          "width": 1440,
+          "height": 2560,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "clip": "none"
+        },
+        "file": "output/production-visual/reduce-coast.png"
+      },
+      {
+        "mode": "reduce",
+        "label": "places",
+        "state": {
+          "complete": true,
+          "width": 648,
+          "height": 435,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "clip": "none"
+        },
+        "file": "output/production-visual/reduce-places.png"
+      },
+      {
+        "mode": "no-js",
+        "label": "hero",
+        "state": {
+          "complete": true,
+          "width": 503,
+          "height": 503,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "clip": "none"
+        },
+        "file": "output/production-visual/no-js-hero.png"
+      },
+      {
+        "mode": "no-js",
+        "label": "coast",
+        "state": {
+          "complete": true,
+          "width": 1440,
+          "height": 2560,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "clip": "none"
+        },
+        "file": "output/production-visual/no-js-coast.png"
+      },
+      {
+        "mode": "no-js",
+        "label": "places",
+        "state": {
+          "complete": true,
+          "width": 648,
+          "height": 435,
+          "display": "block",
+          "visibility": "visible",
+          "opacity": "1",
+          "clip": "none"
+        },
+        "file": "output/production-visual/no-js-places.png"
+      }
+    ]
+  },
+  "outboundEventSamples": [
+    {
+      "event": "portfolio_outbound_click",
+      "cta_placement": "header",
+      "source_path": "/",
+      "destination_host": "ismailstudio.my",
+      "consent_state": "no-collection"
+    },
+    {
+      "event": "portfolio_outbound_click",
+      "cta_placement": "story",
+      "source_path": "/",
+      "destination_host": "ismailstudio.my",
+      "consent_state": "no-collection"
+    },
+    {
+      "event": "portfolio_outbound_click",
+      "cta_placement": "closing",
+      "source_path": "/",
+      "destination_host": "ismailstudio.my",
+      "consent_state": "no-collection"
+    },
+    {
+      "event": "portfolio_outbound_click",
+      "cta_placement": "footer",
+      "source_path": "/",
+      "destination_host": "ismailstudio.my",
+      "consent_state": "no-collection"
+    },
+    {
+      "event": "portfolio_outbound_click",
+      "cta_placement": "signature",
+      "source_path": "/",
+      "destination_host": "ismailstudio.my",
+      "consent_state": "no-collection"
+    }
+  ],
+  "vercelRouting": {
+    "id": "dpl_ACHLBW3aEmdjuse2k2oXy3dYkNQW",
+    "projectId": "prj_j1mVVCiiVs1jNefaK5BEILm1on0x",
+    "ownerId": "team_y1FMLs1LWgVb2dOvegEGYVkf",
+    "routes": [
+      {
+        "src": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?$",
+        "headers": {
+          "Location": "https://malaysia.ismailstudio.my/$1"
+        },
+        "status": 308
+      }
+    ],
+    "readyState": "READY",
+    "url": "malaysia-between-places-qzskulosd-ismailstudio.vercel.app",
+    "target": "production",
+    "alias": [
+      "malaysia-between-places.vercel.app",
+      "malaysia-between-places-ismailstudio.vercel.app"
+    ],
+    "createdAt": 1792412410954
+  },
+  "legacyRecovery": {
+    "source": "99787eaa56e57d0e1c304ea09bd3b9929eb89ed1",
+    "out": "C:\\Users\\moham\\OneDrive\\Desktop\\malaysia\\output\\legacy-recovery",
+    "count": 42,
+    "files": [
+      {
+        "file": "assets/fonts/barlow-condensed.woff2",
+        "bytes": 22308,
+        "sha256": "215a93c696f442034a46fbb382958f753fda60e30490683aeea6b235fcbb2b66"
+      },
+      {
+        "file": "assets/fonts/barlowcondensed-OFL.txt",
+        "bytes": 4377,
+        "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+      },
+      {
+        "file": "assets/fonts/instrument-serif-italic.woff2",
+        "bytes": 22128,
+        "sha256": "5a51946dfffa82972bc98745359c46761515641fda557c25116459a9f83da4a7"
+      },
+      {
+        "file": "assets/fonts/instrumentserif-OFL.txt",
+        "bytes": 4405,
+        "sha256": "129ed7618959716959f2941fdd5b49e0ad6e6c1d78726761786a00253d865521"
+      },
+      {
+        "file": "assets/fonts/manrope-OFL.txt",
+        "bytes": 4387,
+        "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+      },
+      {
+        "file": "assets/fonts/manrope.woff2",
+        "bytes": 24836,
+        "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+      },
+      {
+        "file": "assets/icons/mark.svg",
+        "bytes": 232,
+        "sha256": "8ae5855bc40ad3bea1f9bd9fbc1287a4094d3c353a5a0557ba9f5922a572f517"
+      },
+      {
+        "file": "assets/images/george-town-1200.webp",
+        "bytes": 103968,
+        "sha256": "996596821ec14dfc57ab943629d669a73aa87278c26d0fae7180f180721504d7"
+      },
+      {
+        "file": "assets/images/george-town-2000.webp",
+        "bytes": 227298,
+        "sha256": "05c7f2f8d81853b2535e580619c1cf32a699af1ab2de9370ee9146f3a19264e5"
+      },
+      {
+        "file": "assets/images/george-town-640.webp",
+        "bytes": 38792,
+        "sha256": "9ec5fe94a0301127154a5050fb5d0b80add3c0aadac7cad0b25fc6a253086017"
+      },
+      {
+        "file": "assets/images/kinabalu-1200.webp",
+        "bytes": 77430,
+        "sha256": "b49fa724bc0f8c060c36412af938a60e6da401a77cd26ccb8f8e4a4e6fe2abfc"
+      },
+      {
+        "file": "assets/images/kinabalu-2000.webp",
+        "bytes": 206080,
+        "sha256": "beb7b9f88fdcbf248430be00b0e05e5d4ae1bf29f0660124b2210919728544b7"
+      },
+      {
+        "file": "assets/images/kinabalu-640.webp",
+        "bytes": 22326,
+        "sha256": "b1954be716da421b7fa2fea5b0e75399367383c406786c65797fd7935e9f34de"
+      },
+      {
+        "file": "assets/images/kuala-lumpur-1200.webp",
+        "bytes": 150396,
+        "sha256": "c71f064cc71185179c244f6601fa68ca342bd27bf8683025532adcc81be5fecb"
+      },
+      {
+        "file": "assets/images/kuala-lumpur-2000.webp",
+        "bytes": 335088,
+        "sha256": "5011655b3c82e4a319f45d01ab41894f7c9141d2a28c5e3c985503648a190640"
+      },
+      {
+        "file": "assets/images/kuala-lumpur-640.webp",
+        "bytes": 50448,
+        "sha256": "17c90a29455bc23e7194eda89d6e8f58849d7f9d80e7fa2356985150a7b95607"
+      },
+      {
+        "file": "assets/images/langkawi-1200.webp",
+        "bytes": 251922,
+        "sha256": "92c8ce1c8752eff088d6f75f424dbd9861f97147914cca834e746528ea66e2f2"
+      },
+      {
+        "file": "assets/images/langkawi-2000.webp",
+        "bytes": 526504,
+        "sha256": "611571e1344729cdb36021356d5de0966b2a4780982be2dd12c9914d708902d2"
+      },
+      {
+        "file": "assets/images/langkawi-640.webp",
+        "bytes": 85236,
+        "sha256": "bbcd5f2590d9079045d850790d6f6421f02430d31861beda41a24a497eae23fd"
+      },
+      {
+        "file": "assets/images/nasi-lemak-1200.webp",
+        "bytes": 73826,
+        "sha256": "8ac0ab16654760e1d798385e76ac5dae10a8942793b69277ba16bf66562be94e"
+      },
+      {
+        "file": "assets/images/nasi-lemak-2000.webp",
+        "bytes": 145032,
+        "sha256": "ac89463398ce08e64ade2c76ea52109b43cd35a626ccb0f241bbe2377e5b95f8"
+      },
+      {
+        "file": "assets/images/nasi-lemak-640.webp",
+        "bytes": 31022,
+        "sha256": "42c7820937d90ddf9f27313cd8468523d8c498c0b7a63eb40742fa3a7b1f5691"
+      },
+      {
+        "file": "assets/images/petaling-street-1200.webp",
+        "bytes": 181602,
+        "sha256": "1d5d0e94ef28ea6470c6bbd68760a7e8a4ab31720e35f7016d9e01620511e679"
+      },
+      {
+        "file": "assets/images/petaling-street-2000.webp",
+        "bytes": 373732,
+        "sha256": "c1088c310cbf34e03ce144c86bb4a8422d8739b4bdd443810a9cdbfde4ff0c09"
+      },
+      {
+        "file": "assets/images/petaling-street-640.webp",
+        "bytes": 69960,
+        "sha256": "46e71a1f74eaa2ffe1659509b5df08a146ea08524fb27e8a01030b72280749f7"
+      },
+      {
+        "file": "assets/images/rainforest-1200.webp",
+        "bytes": 344458,
+        "sha256": "66b1dcbc5cc2194397242049090dfe3b808fcf97c53a3c306fc640f15551a0d1"
+      },
+      {
+        "file": "assets/images/rainforest-2000.webp",
+        "bytes": 820952,
+        "sha256": "99fb3679a23c2678fcbc6ede9790065bd8c79fb6fc73dd59a486a41a2eda4fab"
+      },
+      {
+        "file": "assets/images/rainforest-640.webp",
+        "bytes": 105966,
+        "sha256": "06a7d9a9b9be327158339dfaad393c548a6c6df49580467d51dbb58b243c0fca"
+      },
+      {
+        "file": "assets/images/social.jpg",
+        "bytes": 185152,
+        "sha256": "5f1c03bcc699df0e97320884c5c8a4460a44a8a5befb29d30dca8abf31404237"
+      },
+      {
+        "file": "assets/images/sources.json",
+        "bytes": 2166,
+        "sha256": "b66cd8068bc320597acca9631719386379a702457f702018121eb2355f45fef4"
+      },
+      {
+        "file": "assets/vendor/README.txt",
+        "bytes": 118,
+        "sha256": "a776212bc97beaee8f5b1983765edfbc46f62b3f61828aed3e1514a06124b9ca"
+      },
+      {
+        "file": "assets/vendor/ScrollTrigger.min.js",
+        "bytes": 44575,
+        "sha256": "b0b14d67b55b0c43c756ac0b106cfcb09d0879945f6ead64451065b0672916a2"
+      },
+      {
+        "file": "assets/vendor/gsap.min.js",
+        "bytes": 72927,
+        "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+      },
+      {
+        "file": "built-by-ismail.png",
+        "bytes": 406036,
+        "sha256": "226fa7f388c5a3f03344bf1d28232f02c2e885ca3da05baa94ad2a499dbea371"
+      },
+      {
+        "file": "css/main.css",
+        "bytes": 33169,
+        "sha256": "117cff93561ea0b98875b78b25213e21be129e0809505c03ffefa504d77eb46c"
+      },
+      {
+        "file": "index.html",
+        "bytes": 26795,
+        "sha256": "554cd0a78fde5ed8723838917f4c828da22e1493ec713111c81dd1317b9cff0b"
+      },
+      {
+        "file": "js/interactions.js",
+        "bytes": 7482,
+        "sha256": "0efaa87098dd635c604081b9be6aa9669c43e80f685d9e78d3c08735e3e888aa"
+      },
+      {
+        "file": "js/main.js",
+        "bytes": 862,
+        "sha256": "e4dc7faa134e37b89eb159ba8ca34386a8623173e64e04b3f2a8e479f7574edf"
+      },
+      {
+        "file": "js/motion.js",
+        "bytes": 8655,
+        "sha256": "e40b1df5151c4a0da62a56acaa9a513efaacf6cd56d6ded2ab2f330362c44568"
+      },
+      {
+        "file": "js/navigation.js",
+        "bytes": 2954,
+        "sha256": "c8c75fee60bf1d26803a621c73d495a9eb0da9d7ee667616c99e6178be51ca4d"
+      },
+      {
+        "file": "robots.txt",
+        "bytes": 87,
+        "sha256": "2e06e78c57770de15b6652bbecf9bd57414ebe0ff7c76ea8995bbdcce642c156"
+      },
+      {
+        "file": "sitemap.xml",
+        "bytes": 174,
+        "sha256": "b8c49a9be4f2262612a45a21ed844934d62ed8736ff51f5f05803e22bc735e98"
+      }
+    ],
+    "deployed": false
+  },
+  "receipts": [
+    {
+      "file": "output/release-artifact.json",
+      "sha256": "45b8343d9f211b89225f908bfa04e96ecaef60a7be4221b4aa79a3a706f8d782"
+    },
+    {
+      "file": "output/playwright/verified/verification.json",
+      "sha256": "402dd70a3fcec59ac4bf4777a1dabdb4cc2b787f30ba91a509dd868ae0573622"
+    },
+    {
+      "file": "output/playwright/production-verified/verification.json",
+      "sha256": "8911bf67ce0a299f01e875e0118f71a3aaa98bf46bb597faa358aa9a1f03e7ab"
+    },
+    {
+      "file": "output/production-hosted-verification.json",
+      "sha256": "897c15dcd943c709091dda44b612bf1e6447c3b89bed560e46707a22cd6f4c14"
+    },
+    {
+      "file": "output/transition-verification.json",
+      "sha256": "ed4d72a4af1aa687a540e0e94777ea47227fcbaa32ffa92fef6642449a07b470"
+    },
+    {
+      "file": "output/final-http-smoke.json",
+      "sha256": "3c4df39cc416fce8ab38f9cbb079211b72a6d079a25cfa0e0ada5ef49765bc55"
+    },
+    {
+      "file": "output/scene-audit/report.json",
+      "sha256": "63b9b94e92f26a36915a9589f2dd501611a40d5ac1a7a2099600301df8699ac6"
+    },
+    {
+      "file": "output/production-visual/report.json",
+      "sha256": "f175f41948bdd57f8dac7507fe42486d485f53b3d7cb9f3a99e6e5c2de92a896"
+    },
+    {
+      "file": "output/baseline-lighthouse-mobile.json",
+      "sha256": "f6164fc6476fe1a1e632cd83f1db360606390e7ef21cb8099cc2ddce8646a3f3"
+    },
+    {
+      "file": "output/preview-lighthouse-mobile.json",
+      "sha256": "b60e28d3917d0d732600313eb46079994aee2c7a9e180fdae88180289694408a"
+    },
+    {
+      "file": "output/production-lighthouse-mobile.json",
+      "sha256": "9a69b4f0bbe64fa7e3ddfd9e2980e2a3084539e6229c4cafb6f59feb4bbc5f36"
+    },
+    {
+      "file": "output/production-lighthouse-desktop.json",
+      "sha256": "43035e38c79d218ebf38457061a5fdc664b0fde467d61db41f2c180ff30d87ca"
+    }
+  ],
+  "limits": [
+    "Firefox could not launch: spawn UNKNOWN.",
+    "No physical mobile or assistive-technology session.",
+    "Mobile Lighthouse LCP exceeds the 2.5s target; lab runs are not field CWV.",
+    "GA4 collection is incomplete without a real property, consent configuration and DebugView proof.",
+    "Search Console indexing, ranking and conversion uplift are unverified.",
+    "Final bundled Taste CDP captures timed out; manual equivalent is documented in VISUAL-REVIEW.md."
+  ]
+}

@@ -31,3 +31,22 @@ Top three problems:
 3. Initial browser heading checks counted CSS grid stretching as extra text lines. Repair the harness to inspect actual text Range rectangles; also align grid headings to their start edge. This corrects measurement rather than suppressing real failures.
 
 Warnings retained with reasons: responsive optical type roles yield more than five computed sizes; the gallery is an intentionally labelled native scroll region with buttons/keys; the inspector's empty-middle warning counts off-screen horizontal gallery content; no appropriate licensed footage was found, and the moving photographs are honest to the selected chapters. Final renders, scene sheets and checks remain required after these corrections.
+
+## ROUND 3 · final built and hosted version
+
+Seen in one second: a Malaysian photographic journey with a clear start action and studio attribution.
+Idea (one sentence): differences of scale between street, coast and mountain become uneven photographic prints that open into a landscape.
+Live thing: keyboard-operable place previews with real essay links, plus the native photo gallery.
+Layout words by section: hero=three uneven prints / journey=panorama / streets=horizontal photographic frame / coast=expanding landscape / Borneo=diptych / places=index and preview / studio=photo strip and statement / footer=large name.
+Scores: design 8 · usability 8 · creativity 7 · content 8 → overall 7.8.
+Caps applied: creativity stays at 7 because an editorial photographic composition is an established approach. These are self-review judgements, not an external jury score.
+Top three problems (most visible first), each with evidence and resolution:
+1. Borneo's mountain previously fell below its copy. The explicit grid row resolves the hole; reviewed the final desktop/tablet captures and the Borneo section in `output/page-overview-desktop.jpg` and `output/production-overview-1440.jpg`.
+2. Credit headings previously exceeded two lines at 320px. Shortened visible titles; the final six-width browser matrix measures actual text line rectangles and passes. All six mobile pages were reviewed in `output/page-overview-mobile.jpg` and `output/production-overview-390.jpg`.
+3. Long automated full-page capture sometimes omits painted image layers after a rapid scroll sweep, including on reduced motion. This is not accepted as proof of a complete photograph layout. Fresh production viewport captures explicitly decode the image and show the hero, coast and place preview correctly in both reduced-motion and JS-disabled modes: all six files in `output/production-visual/` were opened. Their DOM states are complete, nonzero dimensions, visible, opacity 1 and no clipping. No product change was needed for this capture artifact.
+
+The bundled inspector's final CDP screenshot/montage run stalled with `CDP timeout: Page.captureScreenshot`; it did not produce a final passing report. The last completed bundled inspection remains Round 2's 0 FAIL / 4 WARN. The handoff's `engineering/SKILL-ORCHESTRATION.md` explicitly permits an evidence-based manual equivalent when a script fails. Final equivalent review uses the full Playwright width/heading/overflow/axe matrix, actual page screenshots, the hosted viewport captures above, and `scripts/verify-scenes.mjs`.
+
+Scene evidence: 13 exact progress frames each for desktop, touch-phone static fallback and reduced-motion static fallback; all 39 frames and all three contact sheets (`output/scene-audit/*-sheet.jpg`) reviewed. Desktop hold is 1.85 screens in total, with no scroll trap, unreadable caption or blank interval. Reduced motion has zero ScrollTriggers. The bundled desktop timing sample had 83 frames, median about 16.7ms and one frame over 34ms; it is an observation from this host, not a physical-device FPS guarantee.
+
+Final image review includes the full-page local boards, 320/390/768/1024/1440/1920 responsive folds, two production overview boards, production 1440/390 opening folds and a destination opening, and all six targeted static production viewport captures. No remaining essential visual defect was observed. The reused image collection and the measured mobile LCP remain practical limits; no placeholder media or copy needs replacement before launch.

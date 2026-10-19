@@ -1,0 +1,52 @@
+{
+  "time": "2026-10-19T12:25:42.494Z",
+  "cloudflare": {
+    "deployment": {
+      "id": "b2055749-f9f4-4836-80d4-6371233872ab",
+      "source": "wrangler",
+      "strategy": "percentage",
+      "versions": [
+        {
+          "version_id": "30b9eaad-a6d5-441e-b375-a5ad2afa669a",
+          "percentage": 100
+        }
+      ],
+      "created_on": "2026-10-19T12:05:11.41549Z"
+    },
+    "domain": {
+      "id": "2526c6941b0d5dec94f1cfd53da68646a301b8e8",
+      "zone_id": "dc2bee92d5853929394633d0a4165093",
+      "zone_name": "ismailstudio.my",
+      "hostname": "malaysia.ismailstudio.my",
+      "service": "malaysia-between-places",
+      "environment": "production",
+      "cert_id": "b5a19534-230d-4b8e-9b39-8ee53e16632f",
+      "previews_enabled": false,
+      "enabled": true
+    },
+    "privacy": {
+      "description": "Keep the Malaysia editorial's documented no-collection policy and self-only CSP.",
+      "id": "f41f0faf102c4f759b75eeccc3f449e5",
+      "kind": "zone",
+      "last_updated": "2026-10-19T12:09:58.133838Z",
+      "name": "Malaysia privacy configuration",
+      "phase": "http_config_settings",
+      "rules": [
+        {
+          "action": "set_config",
+          "action_parameters": {
+            "disable_rum": true
+          },
+          "description": "Disable automatic RUM injection only on malaysia.ismailstudio.my",
+          "enabled": true,
+          "expression": "(http.host eq \"malaysia.ismailstudio.my\")",
+          "id": "2bf2eb55a13043a285ee20c6b423a0ae",
+          "last_updated": "2026-10-19T12:09:58.133838Z",
+          "ref": "malaysia_no_analytics_injection",
+          "version": "1"
+        }
+      ],
+      "version": "1"
+    }
+  }
+}

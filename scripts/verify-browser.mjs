@@ -23,12 +23,15 @@ const widths = full ? [320, 390, 768, 1024, 1440, 1920] : [390, 1440];
 const results = [];
 const problems = [];
 const externalRequests = new Set();
+const cancelledImages = [];
+const filter = process.argv.includes('--only') ? process.argv[process.argv.indexOf('--only') + 1] : null;
 let assertions = 0;
 function check(value, message) {
   assertions++;
   assert.ok(value, message);
 }
 async function record(label, fn) {
+  if (filter && !label.includes(filter)) return;
   try {
     const details = await fn();
     results.push({ label, status: "pass", ...details });
@@ -58,9 +61,14 @@ async function open(context, route, js = true) {
   page.on("console", (m) => {
     if (m.type() === "error") errors.push(m.text());
   });
-  page.on("requestfailed", (r) =>
-    errors.push(`${r.method()} ${r.url()} ${r.failure()?.errorText}`),
-  );
+  page.on("requestfailed", (r) => {
+    // Navigating away or replacing a responsive preview can cancel an image.
+    // Keep these observable, separately from failed resources (each asset is
+    // also checked by direct HTTP and the hosted SHA-256 manifest).
+    if (r.resourceType() === 'image' && r.failure()?.errorText === 'net::ERR_ABORTED') {
+      cancelledImages.push({url:r.url(),reason:r.failure().errorText});
+    } else errors.push(`${r.method()} ${r.url()} ${r.failure()?.errorText}`);
+  });
   page.on("request", (r) => {
     if (new URL(r.url()).origin !== base.origin) externalRequests.add(r.url());
   });
@@ -76,6 +84,12 @@ async function open(context, route, js = true) {
       { timeout: 12000 },
     );
   if (js) await page.waitForFunction(() => document.fonts.status === "loaded");
+  if (js) {
+    // load/complete can precede async image decoding. Capture the painted final
+    // hero rather than a transient blank decode frame or an unfinished shutter.
+    await page.locator('img[loading="eager"]').evaluateAll(imgs => Promise.all(imgs.map(img => img.decode())));
+    await page.waitForFunction(() => !window.gsap || !gsap.isTweening('.signature-image'));
+  }
   return { page, errors };
 }
 async function contentChecks(page) {
@@ -518,12 +532,14 @@ const report = {
   time: new Date().toISOString(),
   base: base.href,
   full,
+  filter,
   assertions,
   cases: results.length,
   passed: results.filter((r) => r.status === "pass").length,
   failures: problems,
   unavailable: results.filter((r) => r.status === "unavailable"),
   externalRequests: [...externalRequests],
+  cancelledImages,
   results,
 };
 await writeFile(

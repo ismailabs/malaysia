@@ -1,0 +1,46 @@
+{
+  "production": {
+    "hostname": "malaysia.ismailstudio.my",
+    "worker": "malaysia-between-places",
+    "version": "30b9eaad-a6d5-441e-b375-a5ad2afa669a",
+    "deployment": "b2055749-f9f4-4836-80d4-6371233872ab",
+    "workerDomainId": "2526c6941b0d5dec94f1cfd53da68646a301b8e8",
+    "sourceCommit": "875b293b9638f665d499955f80d44c8d78c060e8"
+  },
+  "privacyConfiguration": {
+    "zone": "dc2bee92d5853929394633d0a4165093",
+    "ruleset": "f41f0faf102c4f759b75eeccc3f449e5",
+    "rule": "2bf2eb55a13043a285ee20c6b423a0ae",
+    "phase": "http_config_settings",
+    "expression": "(http.host eq \"malaysia.ismailstudio.my\")",
+    "action": "set_config",
+    "action_parameters": {"disable_rum": true},
+    "reason": "Preserve the site's no-collection policy and self-only CSP. The existing zone-wide Web Analytics setting otherwise injects a blocked beacon into browser responses.",
+    "existingZoneAnalyticsChanged": false,
+    "cost": "One configuration rule within the documented Free-plan allowance; no subscription change."
+  },
+  "preview": {
+    "url": "https://malaysia-between-places-preview.mohamad-ismail-mohd-izwan.workers.dev/",
+    "worker": "malaysia-between-places-preview",
+    "version": "35870e7f-fbfa-454c-ad00-d24b3f5b27a6",
+    "indexing": "X-Robots-Tag: noindex, nofollow"
+  },
+  "legacyRedirect": {
+    "deployment": "dpl_ACHLBW3aEmdjuse2k2oXy3dYkNQW",
+    "url": "https://malaysia-between-places.vercel.app/",
+    "artifact": "Isolated Vercel Build Output API v3 static redirect artifact",
+    "firstStatus": 308,
+    "pathAndQueryPreserved": true,
+    "httpCases": 14,
+    "browserFragmentCases": 8,
+    "actualStudioVisits": 5
+  },
+  "legacyRecovery": {
+    "project": "prj_j1mVVCiiVs1jNefaK5BEILm1on0x",
+    "team": "team_y1FMLs1LWgVb2dOvegEGYVkf",
+    "originalDeployment": "dpl_H9WTx7ETSnAoG86CqVi1dy2XSH14",
+    "originalDeploymentUrl": "https://malaysia-between-places-hjgjuq3ve.vercel.app/",
+    "originalSource": "99787eaa56e57d0e1c304ea09bd3b9929eb89ed1",
+    "recoveryTag": "malaysia-before-editorial-20261019"
+  }
+}
